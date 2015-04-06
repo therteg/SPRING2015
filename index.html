@@ -2,8 +2,54 @@
 <html>
 <head>
 	<title>WMy Zodiac</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<style>	
+		body { 
+	    margin: 2em; 
+	    font-family: sans-serif; 
+	    font-size: 90%; 
+	    background: #f8f7f7; 
+		}
+
+		label { 
+		    float: left; 
+		    display: block; 
+		    width: 11em; 
+		}
+
+		.datefield { 
+		    display: inline; 
+		    padding: 0.3em; 
+		    border: inset 1px #CCC; 
+		    background: #FFF; 
+		    border-radius: 4px;
+		    color: #666;
+		}
+
+		.datefield * { 
+		    display: inline-block;
+		}
+
+		.datefield input { 
+		    width: 1.7em; 
+		    padding: 0 0.4em; 
+		    border: none; 
+		    font-size: 100%; 
+		    background: none;
+		    color: #000;            
+		}
+
+		.datefield input#year { width:2.5em; }
+		.datefield input:focus { outline:none; }
+	</style>
 </head>
 <body>
-<h1>Hello World</h1>
+	<h1>Enter your date of birth</h1>
+	<label for="day">Date of Birth (autotab):</label>
+	<div id="date1" class="datefield">
+	    <input id="day" type="tel" maxlength="2" placeholder="DD"/> /              
+	    <input id="month" type="tel" maxlength="2" placeholder="MM"/>/
+	    <input id="year" type="tel" maxlength="4" placeholder="YYYY"/>
+	</div>
 </body>
 </html>
