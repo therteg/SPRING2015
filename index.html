@@ -42,10 +42,13 @@
 <body>
 	<h1>Enter your date of birth</h1>
 	<div id="date1" class="datefield">
+		<form id="dob">
 	    <input id="day" type="tel" maxlength="2" placeholder="DD"/> /              
-	    <input id="month" type="tel" maxlength="2" placeholder="MM"/>/
-	    <input id="year" type="tel" maxlength="4" placeholder="YYYY"/>
+	    <input id="month" type="tel" maxlength="2" placeholder="MM"/>
+	    </form>
+
 	</div>
+	<div id="sign"></div>
 
 	<script>
 		(function(d){var u=navigator.platform,g=null,r="iPad"===u||"iPhone"===u||"iPod"===u,w="undefined"!==typeof InstallTrigger,x=!window.ActiveXObject&&"ActiveXObject"in window,h=function(a,f){if(null!==f&&"undefined"!==typeof f)for(var b in f)d(a).data("autotab-"+b,f[b])},l=function(a){var f={arrowKey:!1,format:"all",loaded:!1,disabled:!1,pattern:null,uppercase:!1,lowercase:!1,nospace:!1,maxlength:2147483647,target:null,previous:null,trigger:null,originalValue:"",changed:!1,editable:"text"===a.type||
@@ -68,6 +71,91 @@
 		a.value.length},1),r||h(c.target[0],e))}}};a.value.length==e.maxlength&&(b.arrowKey=!1,d(a).trigger("autotab-next",b),r||h(e.target[0],a.value.toLowerCase()));a.maxLength=e.maxlength},1)})(this,b)})}};d.fn.autotab_magic=function(a){return d(this).autotab()};d.fn.autotab_filter=function(a){var f={};"string"===typeof a||"function"===typeof a?f.format=a:d.extend(f,a);return d(this).autotab("filter",f)}})(jQuery);
 
 		$("#date1 input").autotab_magic().autotab_filter("numeric");
+
+		$("input").keypress(function(event) {
+		    if (event.which == 13) {
+		        event.preventDefault();
+		        $("form").submit();
+
+		    }
+		});
+
+		$("#dob").submit(function( event ) {
+
+		  event.preventDefault();
+		  var day = $("#day").val();
+		  var month = $("#day").val();
+		  var birthcode = month+day;
+		  var astrology;
+		  birthcode = Number(birthcode);
+		  switch (true)
+              {
+
+                case (birthcode <= 120):
+                     astrology = 'Capricorn';
+                     break;
+
+                case (birthcode <= 218):
+                     astrology = 'Aquarius';
+                     break;
+
+                case (birthcode <= 320):
+                     astrology = 'Pisces';
+                     break;
+
+                case (birthcode <= 420):
+                     astrology = 'Aries';
+                     break;
+
+                case (birthcode <= 521):
+                     astrology = 'Taurus';
+                     break;
+
+                case (birthcode <= 621):
+                     astrology = 'Gemini';
+                     break;
+
+                case (birthcode <= 722):
+                     astrology = 'Cancer';
+                     break;
+    
+                case (birthcode <= 823):
+                     astrology = 'Leo';
+                     break;
+
+                case (birthcode <= 923):
+                     astrology = 'Virgo';
+                     break;
+
+                case (birthcode <= 1023):
+                     astrology = 'Libra';
+                     break;
+
+                case (birthcode <= 1122):
+                     astrology = 'Scorpio';
+                     break;
+
+                case (birthcode <= 1222):
+                     astrology = 'Sagittarius';
+                     break;
+
+                case (birthcode <= 1231):
+                     astrology = 'Capricorn';
+                     break;
+
+                 default: 
+                     astrology='Mystery';
+                     break;
+              }
+
+      document.getElementById('sign').innerHTML ='Your sign:'+astrology+'';
+
+
+		});
+      
+      
+      
+
 	</script>
 </body>
 </html>
