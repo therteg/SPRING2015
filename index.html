@@ -37,6 +37,16 @@
 
 		.datefield input#year { width:3em; }
 		.datefield input:focus { outline:none; }
+
+		#sign {
+			margin: 1em 0;
+			font-size:3em;
+			font-weight: bold;
+		}
+
+		#sign>span {
+			color: red;
+		}
 	</style>
 </head>
 <body>
@@ -84,7 +94,7 @@
 
 		  event.preventDefault();
 		  var day = $("#day").val();
-		  var month = $("#day").val();
+		  var month = $("#month").val();
 		  var birthcode = month+day;
 		  var astrology;
 		  birthcode = Number(birthcode);
@@ -148,7 +158,7 @@
                      break;
               }
 
-      document.getElementById('sign').innerHTML ='Your sign:'+astrology+'';
+      document.getElementById('sign').innerHTML ='Your sign: <span>'+astrology+'</span>';
 
 
 		});
