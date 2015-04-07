@@ -1,0 +1,81 @@
+
+// IF ELSE
+@if($gutter-size < 50px){
+	// do something
+}
+
+// OPERATORS
+/* 
+
+ASSIGNMENT
+: assign the right to the left
+
+MATH
++ addition
+- subtraction
+* multiplication (asterisk)
+/ division
+
+COMPARISON
+== is the left equal to the right
+!= is not equal to
+< less than
+> greater than
+<= less than or equal to
+>= greater than or equal to
+
+MATH ASSIGNMENT
+a = a + b;
+a += b;
++= add the right to the left and reassign the left
+-=
+*=
+/=
+
+MODULO
+% the remainder of division of the right from the left
+
+*/
+
+$num: 6;
+
+@if($num == 5) {
+	// code for they're equal
+} @else if($num > 5) {
+	// code
+} @else if($num < 5) {
+	// code
+} @else {
+	// what is it? i don't know it's weird.
+}
+
+// FOR LOOP
+@for $i from 1 through 9 { // integer
+	.column#{$i} {
+		width: $i * 100px;
+	}
+}
+
+// EACH LOOP
+@each $key, $value in $container-width {
+	.container-#{$key} {
+		width:$value;
+	}
+}
+
+// MIXIN
+@mixin my-mixin {
+	.container {
+		width:50px;
+	}
+}
+
+@include my-mixin;
+
+@mixin make-container($num:800){
+	.container {
+		width: $num * 1px;
+	}
+}
+
+@include make-container(600);

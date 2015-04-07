@@ -1,0 +1,39 @@
+
+$gutter-size: 10px;
+$column-length: 12;
+
+// $container-width: 900px;
+// Sass Map
+$container-width:(
+	xs:0,
+	sm:480px,
+	md:640px,
+	lg:960px,
+	xl:1280px
+	);
+
+// Sass List
+$size-shortnames:("xs","sm","md","lg","xl");
+
+
+// COLORS
+$color-hero: #126537;
+$color-second: #9cc813;
+$color-second-hover: lighten($color-second,30%);
+$color-brown: #4e4038;
+$color-background: #FFFFF8;
+
+
+/* $color-graydark: #666;
+$color-graylight: #ccc;
+
+$color-warning: orange;
+$color-warning-dark: darken($color-warning,30%);
+$color-warning-dark: lighten($color-warning,30%);
+$color-error: red;
+$color-success: green; */
+
+
+// FONTS
+$font-heading:'Neuton', 'cambria', serif;
+$font-body: 'Lato', Verdana, sans-serif;

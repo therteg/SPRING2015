@@ -1,0 +1,48 @@
+
+
+
+/*===============0==========================*/
+
+
+
+/*===============NAV==========================*/
+
+
+/*===============HOME PAGE==========================*/
+
+
+/*===============12 SIGN PAGE=========================*/
+
+
+/*===============COMPATIBILITY PAGE=========================*/
+
+
+/*===============QUOTE PAGE=========================*/
+
+/*===============footer=========================*/
+
+
+
+
+
+
+/*===============MEDIA QUERY=========================*/
+
+
+@media (min-width: #{map-get($container-width,"xs")}) and (max-width: #{map-get($container-width,"md")}){
+	
+}
+
+@media (max-width: 840px) {
+	
+
+
+}
+
+@media (max-width: #{map-get($container-width,"md")}){
+	
+}
+
+@media (min-width: #{map-get($container-width,"xl")}){
+	
+}

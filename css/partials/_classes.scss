@@ -1,0 +1,35 @@
+
+
+.container {
+    // width: $container-width;
+    // uses a previously created mixin
+    @include center-in-parent;
+
+}
+
+.compact {
+    list-style-type:none;
+    margin-top:0;
+    margin-bottom:0;
+    padding-left:0;
+}
+.clearfix:after {
+    content:'';
+    display:table;
+    clear:both;
+}
+
+.nav {
+    &>ul{
+        @extend .compact;
+    }
+    a {
+        display:block;
+        background-color:transparent;
+        color:$color-hero;
+        &:hover {
+            color:white;
+            background-color:lighten($color-hero,20%);
+        }
+    }
+}
