@@ -7,3 +7,9 @@ realistic
 complex
 decorative
 cool look and feel
+
+Divided in 4 categories:
+water
+wind
+earth
+fire
