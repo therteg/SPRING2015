@@ -1,0 +1,16 @@
+@include make-container;
+@include make-column-definitions;
+@include make-columns;
+
+@each $prefix, $pre-value in $container-width {
+	
+	//this is mobile first,
+	//for desktop first,
+	//switch the order of value
+	//use max-width
+	@media (min-width:$pre-value) {
+		@include make-container(#{$prefix});
+		@include make-columns(#{$prefix});
+	}
+
+}
