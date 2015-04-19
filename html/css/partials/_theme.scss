@@ -2,25 +2,159 @@
 
 
 /*===============0==========================*/
+body{
+	font-size:16px;
+}
 
+.inline-block{
+	display:inline-block;
+}
 
 
 /*===============NAV==========================*/
+ul{
+	padding:0 5%;
+}
+
+li{
+	display:inline-block;
+	text-align:center;
+	width:7.5%;
+	height:2em;
+	& a{
+		display:inline-block;
+	}
+}
 
 
-/*===============HOME PAGE==========================*/
+/*===============TOP==========================*/
+#top{
+	height:20em;
+	background-color:grey;
+}
+
+#top .inline-block{
+	width:49.5%;
+	vertical-align:top;
+	text-align:center;
+}
+
+.big_icon{
+	height:20em;
+	vertical-align:top;
+}
+
+.name{
+	height:20em;
+	width:80%;
+	display:inline-block;
+	text-align:left;
+	& .element{
+		font-size:4em;
+		padding-bottom:0.5em;
+		padding-top:2em;
+	}
+	& .sign{
+		font-size:2em;
+		padding-bottom:0.5em;
+	}
+	& .date{
+		font-size:1em;
+	}
+}
 
 
-/*===============12 SIGN PAGE=========================*/
+/*===============DESCRIPTION=========================*/
+#description{
+	line-height:2em;
+	padding:4em 0;
+	text-align:center;
+	& div{
+		text-align: left;
+		width:80%;
+	}
+	
+}
+
+
 
 
 /*===============COMPATIBILITY PAGE=========================*/
+#compatibility{
+	color:white;
+	& .inline-block{
+		width:49%;
+		height:8em;
+		text-align: center;
+	}
+	& .circle{
+		display: inline-block;
+		height:5em;
+		width:5em;
+		border-radius:2.5em;
+		background-color:yellow;
+		margin:1em 0;
+	}
+	& .title{
+		padding-bottom:3em;
+	}
+}
+
+.friend{
+	background-color:#72c2ed;
+	padding:4em 0;
+	text-align:center;
+}
+
+.lover{
+	background-color:#08538c;
+	padding:4em 0;
+	text-align:center;
+}
+
+.enemy{
+	background-color:#183460;
+	padding:4em 0;
+	text-align:center;
+}
 
 
-/*===============QUOTE PAGE=========================*/
+/*===============WALL OF FAME=========================*/
+#wall_of_fame{
+	background-color:grey;
+	& .title{
+		padding:2em 0;
+		text-align: center;
+		font-size:2em;
+		background-color:white;
+	}
+	& .text{
+		padding:1em;
+	}
+}
+
+.pic{
+	background-image:url(../image/test.png);
+	height:18em;
+	@include background;
+}
 
 /*===============footer=========================*/
-
+footer{
+	background-color:black;
+	color:white;
+	text-align:center;
+	& p {
+	  display: inline-block;
+	  width:80%;
+	  text-align:center;
+	  -webkit-margin-before: 0;
+	  -webkit-margin-after: 0;
+	  -webkit-margin-start: 0px;
+	  -webkit-margin-end: 0px;
+	  padding:2em 0;
+}
+}
 
 
 
