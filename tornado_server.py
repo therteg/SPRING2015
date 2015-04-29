@@ -89,7 +89,7 @@ class Application(tornado.web.Application):
         tornado.web.Application.__init__(self, handlers, **app_settings)
 
 def main():
-    tornado.options.define("port", default=8001, help="Listen on port", type=int)
+    tornado.options.define("port", default=3000, help="Listen on port", type=int)
     tornado.options.parse_command_line()
     logging.info("starting tornado_server on 0.0.0.0:%d" % tornado.options.options.port)
     http_server = tornado.httpserver.HTTPServer(request_callback=Application(), xheaders=True)
