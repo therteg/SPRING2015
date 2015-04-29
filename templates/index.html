@@ -1,90 +1,88 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Facebook Login JavaScript Example</title>
-<meta charset="UTF-8">
-	<script type="text/javascript" src="{{static_url("js/jquery.min.js")}}"></script>
-  <script type="text/javascript" src="{{static_url("js/bootstrap.min.js")}}"></script>
-  <script type="text/javascript" src="{{static_url("js/main.js")}}"></script>
-</head>
-<body>
+{% extends base.html %}
 
-<!--
-  Below we include the Login Button social plugin. This button uses
-  the JavaScript SDK to present a graphical Login button that triggers
-  the FB.login() function when clicked.
--->
+{% block body %}
+<body class="no-scroll">
+  <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
 
-<h1>Enter your date of birth</h1>
-<form id="dob">
-<select id="month">
-	<option> - Month - </option>
-	<option value="01">January</option>
-	<option value="02">Febuary</option>
-	<option value="03">March</option>
-	<option value="04">April</option>
-	<option value="05">May</option>
-	<option value="06">June</option>
-	<option value="07">July</option>
-	<option value="08">August</option>
-	<option value="09">September</option>
-	<option value="10">October</option>
-	<option value="11">November</option>
-	<option value="12">December</option>
-</select>
+  <div class="background-wrapper full-height extra-padding">
+    <div class="container">
+      <nav class="zodiac">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-2 -2 504 504" id="menu" style="touch-action: none; -webkit-user-select: none;">
+          <g id="itemsContainer">
+            <a class="item" id="item-1" role="link" tabindex="0" xlink:href="/gemini" xlink:title="Gemini" transform="matrix(1,0,0,1,0,0)" data-svg-origin="250 250" style="">
+              <path fill="none" stroke="#111" d="M410,250 l90,0 A250,250 0 0,0 466.5063509461097,125.00000000000001 l-77.94228634059948,44.999999999999986 A160,160 0 0,1 410,250" class="sector"></path>
+              <use xlink:href="{{static_url("images/sprite.svg")}}#icon-gemini" width="50" height="50" x="420" y="175" transform="rotate(0 435 198)" class="icon-wrap"></use>
+            </a>
+            <a class="item" id="item-2" role="link" tabindex="0" xlink:href="/taurus" xlink:title="Taurus" transform="matrix(0.86602,-0.49999,0.49999,0.86602,-91.50635094610965,158.4936490538903)" data-svg-origin="250 250" style="">
+              <path fill="none" stroke="#111" d="M410,250 l90,0 A250,250 0 0,0 466.5063509461097,125.00000000000001 l-77.94228634059948,44.999999999999986 A160,160 0 0,1 410,250" class="sector"></path>
+              <use xlink:href="{{static_url("images/sprite.svg")}}#icon-taurus" width="50" height="50" x="407.61700439453125" y="160.2185516357422" transform="rotate(30 435 198)" class="icon-wrap"></use>
+            </a>
+            <a class="item" id="item-3" role="link" tabindex="0" xlink:href="/aries" xlink:title="Aries" transform="matrix(0.5,-0.86602,0.86602,0.5,-91.5063509461097,341.5063509461096)" data-svg-origin="250 250" style="">
+              <path fill="none" stroke="#111" d="M410,250 l90,0 A250,250 0 0,0 466.5063509461097,125.00000000000001 l-77.94228634059948,44.999999999999986 A160,160 0 0,1 410,250" class="sector"></path>
+              <use xlink:href="{{static_url("images/sprite.svg")}}#icon-aries" width="50" height="50" x="407.61700439453125" y="160.2185516357422" transform="rotate(60 435 198)" class="icon-wrap"></use>
+            </a>
+            <a class="item" id="item-4" role="link" tabindex="0" xlink:href="/pisces" xlink:title="Pisces" transform="matrix(0,-1,1,0,0,500)" data-svg-origin="250 250" style="">
+              <path fill="none" stroke="#111" d="M410,250 l90,0 A250,250 0 0,0 466.5063509461097,125.00000000000001 l-77.94228634059948,44.999999999999986 A160,160 0 0,1 410,250" class="sector"></path>
+              <use xlink:href="{{static_url("images/sprite.svg")}}#icon-pisces" width="50" height="50" x="407.61700439453125" y="160.2185516357422" transform="rotate(90 435 198)" class="icon-wrap"></use>
+            </a>
+            <a class="item" id="item-5" role="link" tabindex="0" xlink:href="/aquarius" xlink:title="Aquarius" transform="matrix(-0.49999,-0.86602,0.86602,-0.49999,158.49364905389024,591.5063509461097)" data-svg-origin="250 250" style="">
+              <path fill="none" stroke="#111" d="M410,250 l90,0 A250,250 0 0,0 466.5063509461097,125.00000000000001 l-77.94228634059948,44.999999999999986 A160,160 0 0,1 410,250" class="sector"></path>
+              <use xlink:href="{{static_url("images/sprite.svg")}}#icon-aquarius" width="50" height="50" x="407.61700439453125" y="160.2185516357422" transform="rotate(120 435 198)" class="icon-wrap"></use>
+            </a>
+            <a class="item" id="item-6" role="link" tabindex="0" xlink:href="/capricorn" xlink:title="Capricorn" transform="matrix(-0.86602,-0.49999,0.49999,-0.86602,341.5063509461097,591.5063509461097)" data-svg-origin="250 250" style="">
+              <path fill="none" stroke="#111" d="M410,250 l90,0 A250,250 0 0,0 466.5063509461097,125.00000000000001 l-77.94228634059948,44.999999999999986 A160,160 0 0,1 410,250" class="sector"></path>
+              <use xlink:href="{{static_url("images/sprite.svg")}}#icon-capricorn" width="50" height="50" x="407.61700439453125" y="160.2185516357422" transform="rotate(150 435 188)" class="icon-wrap"></use>
+            </a>
+            <a class="item" id="item-7" role="link" tabindex="0" xlink:href="/sagittarius" xlink:title="Sagittarius" transform="matrix(-1,0,0,-1,500,500)" data-svg-origin="250 250" style="">
+              <path fill="none" stroke="#111" d="M410,250 l90,0 A250,250 0 0,0 466.5063509461097,125.00000000000001 l-77.94228634059948,44.999999999999986 A160,160 0 0,1 410,250" class="sector"></path>
+              <use xlink:href="{{static_url("images/sprite.svg")}}#icon-sagittarius" width="50" height="50" x="407.61700439453125" y="160.2185516357422" transform="rotate(180 440 190)" class="icon-wrap"></use>
+            </a>
+            <a class="item" id="item-8" role="link" tabindex="0" xlink:href="/scorpio" xlink:title="Scorpio" transform="matrix(-0.86602,0.5,-0.5,-0.86602,591.5063509461097,341.5063509461096)" data-svg-origin="250 250" style="">
+              <path fill="none" stroke="#111" d="M410,250 l90,0 A250,250 0 0,0 466.5063509461097,125.00000000000001 l-77.94228634059948,44.999999999999986 A160,160 0 0,1 410,250" class="sector"></path>
+              <use xlink:href="{{static_url("images/sprite.svg")}}#icon-scorpio" width="50" height="50" x="407.61700439453125" y="160.2185516357422" transform="rotate(210 440 188)" class="icon-wrap"></use>
+            </a>
+            <a class="item" id="item-9" role="link" tabindex="0" xlink:href="/libra" xlink:title="Libra" transform="matrix(-0.5,0.86602,-0.86602,-0.5,591.5063509461097,158.4936490538905)" data-svg-origin="250 250" style="">
+              <path fill="none" stroke="#111" d="M410,250 l90,0 A250,250 0 0,0 466.5063509461097,125.00000000000001 l-77.94228634059948,44.999999999999986 A160,160 0 0,1 410,250" class="sector"></path>
+              <use xlink:href="{{static_url("images/sprite.svg")}}#icon-libra" width="50" height="50" x="407.61700439453125" y="160.2185516357422" transform="rotate(240 445 185)" class="icon-wrap"></use>
+            </a>
+            <a class="item" id="item-10" role="link" tabindex="0" xlink:href="/virgo" xlink:title="Virgo" transform="matrix(0,1,-1,0,500.00000000000006,0)" data-svg-origin="250 250" style="">
+              <path fill="none" stroke="#111" d="M410,250 l90,0 A250,250 0 0,0 466.5063509461097,125.00000000000001 l-77.94228634059948,44.999999999999986 A160,160 0 0,1 410,250" class="sector"></path>
+              <use xlink:href="{{static_url("images/sprite.svg")}}#icon-virgo" width="50" height="50" x="407.61700439453125" y="160.2185516357422" transform="rotate(270 445 185)" class="icon-wrap"></use>
+            </a>
+            <a class="item" id="item-11" role="link" tabindex="0" xlink:href="/leo" xlink:title="Leo" transform="matrix(0.5,0.86602,-0.86602,0.5,341.5063509461096,-91.5063509461097)" data-svg-origin="250 250" style="">
+              <path fill="none" stroke="#111" d="M410,250 l90,0 A250,250 0 0,0 466.5063509461097,125.00000000000001 l-77.94228634059948,44.999999999999986 A160,160 0 0,1 410,250" class="sector"></path>
+              <use xlink:href="{{static_url("images/sprite.svg")}}#icon-leo" width="50" height="50" x="407.61700439453125" y="160.2185516357422" transform="rotate(300 450 180)" class="icon-wrap"></use>
+            </a>
+            <a class="item" id="item-12" role="link" tabindex="0" xlink:href="/cancer" xlink:title="Cancer" transform="matrix(0.86602,0.5,-0.5,0.86602,158.49364905389052,-91.5063509461097)" data-svg-origin="250 250" style="">
+              <path fill="none" stroke="#111" d="M410,250 l90,0 A250,250 0 0,0 466.5063509461097,125.00000000000001 l-77.94228634059948,44.999999999999986 A160,160 0 0,1 410,250" class="sector"></path>
+              <use xlink:href="{{static_url("images/sprite.svg")}}#icon-cancer" width="50" height="50" x="407.61700439453125" y="160.2185516357422" transform="rotate(330 450 175)" class="icon-wrap"></use>
+            </a>
+          </g>
+          <g id="trigger" class="trigger menu-trigger" role="form">
+            <foreignObject x="23%" y="35%" width="54%" height="30%" class="select-sign">
+              <body xmlns="http://www.w3.org/1999/xhtml">
+                <h2>ENTER YOUR DATE OF BIRTH</h2>
+                <form method="GET">
+                  <div class="row">
+                    <div class="col-4">
+                      <input type="text" id="month" name="month" class="form-control" placeholder="MM" maxlength="2" autofocus/>
+                    </div>
+                    <div class="col-4">
+                      <input type="text" id="day" name="day" class="form-control" placeholder="DD" maxlength="2" />
+                    </div>
+                    <div class="col-4">
+                      <input type="text" id="year" name="year" class="form-control" placeholder="YYYY" maxlength="4" />
+                    </div>
+                  </div>
+                </form>
+              </body>
+            </foreignObject>
+          </g>
+        </svg>
+      </nav>
+    </div>
+  </div>
 
-<select id="day">
-	<option> - Day - </option>
-	<option value="1">1</option>
-	<option value="2">2</option>
-	<option value="3">3</option>
-	<option value="4">4</option>
-	<option value="5">5</option>
-	<option value="6">6</option>
-	<option value="7">7</option>
-	<option value="8">8</option>
-	<option value="9">9</option>
-	<option value="10">10</option>
-	<option value="11">11</option>
-	<option value="12">12</option>
-	<option value="13">13</option>
-	<option value="14">14</option>
-	<option value="15">15</option>
-	<option value="16">16</option>
-	<option value="17">17</option>
-	<option value="18">18</option>
-	<option value="19">19</option>
-	<option value="20">20</option>
-	<option value="21">21</option>
-	<option value="22">22</option>
-	<option value="23">23</option>
-	<option value="24">24</option>
-	<option value="25">25</option>
-	<option value="26">26</option>
-	<option value="27">27</option>
-	<option value="28">28</option>
-	<option value="29">29</option>
-	<option value="30">30</option>
-	<option value="31">31</option>
-</select>
-<input type="submit" value="Submit">
-</form>
-
-<br><br>
-
-<p>or login with Facebook</p>
-<div class="loginbtn">
-  <fb:login-button scope="public_profile,email,user_birthday" onlogin="checkLoginState();">
-  </fb:login-button>
-</div>
-
-
-<br><br>
-
-<div id="sign">
-</div>
-
-</body>
-</html>
-
-  
+{% end %}

@@ -1,0 +1,236 @@
+{% extends famous.html %}
+
+{% block zodiac %}
+sagittarius
+{% end %}
+
+{% block menuzodiacname %}
+sagittarius
+{% end %}
+
+{% block aboutname %}
+sagittarius
+{% end %}
+
+{% block famous %}
+
+  <div class="container container-lg extra-padding" style="max-width: 1000px;">
+    <div class="row row-lg">
+      <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+        <div class="person">
+          <a href="#" class="person__link">
+            <img src="{{static_url("images/person")}}/prince-charles.jpg" alt="Person" class="person__img">
+            <div class="person__name">
+              <span class="person__firstname">Prince</span><br>
+              <span class="person__lastname">Charles</span>
+            </div>
+            <div class="person__bio">
+              <div class="person__dob">Born: 31/2/1988</div>
+              <div class="person__text">William Henry "Bill" Gates III is an American business magnate, philanthropist, investor, computer programmer, and inventor.</div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+        <div class="person">
+          <a href="#" class="person__link">
+            <img src="{{static_url("images/person")}}/bill-gates.jpg" alt="Person" class="person__img">
+            <div class="person__name">
+              <span class="person__firstname">Bill</span><br>
+              <span class="person__lastname">Gates</span>
+            </div>
+            <div class="person__bio">
+              <div class="person__dob">Born: 31/2/1988</div>
+              <div class="person__text">William Henry "Bill" Gates III is an American business magnate, philanthropist, investor, computer programmer, and inventor.</div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+        <div class="person">
+          <a href="#" class="person__link">
+            <img src="{{static_url("images/person")}}/gordon-ramsay.jpg" alt="Person" class="person__img">
+            <div class="person__name">
+              <span class="person__firstname">Gordon</span><br>
+              <span class="person__lastname">Ramsay</span>
+            </div>
+            <div class="person__bio">
+              <div class="person__dob">Born: 31/2/1988</div>
+              <div class="person__text">William Henry "Bill" Gates III is an American business magnate, philanthropist, investor, computer programmer, and inventor.</div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+        <div class="person">
+          <a href="#" class="person__link">
+            <img src="{{static_url("images/person")}}/demi-moore.jpg" alt="Person" class="person__img">
+            <div class="person__name">
+              <span class="person__firstname">Demi</span><br>
+              <span class="person__lastname">Moore</span>
+            </div>
+            <div class="person__bio">
+              <div class="person__dob">Born: 31/2/1988</div>
+              <div class="person__text">William Henry "Bill" Gates III is an American business magnate, philanthropist, investor, computer programmer, and inventor.</div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+        <div class="person">
+          <a href="#" class="person__link">
+            <img src="{{static_url("images/person")}}/bryan-adams.jpg" alt="Person" class="person__img">
+            <div class="person__name">
+              <span class="person__firstname">Bryan</span><br>
+              <span class="person__lastname">Adams</span>
+            </div>
+            <div class="person__bio">
+              <div class="person__dob">Born: 31/2/1988</div>
+              <div class="person__text">William Henry "Bill" Gates III is an American business magnate, philanthropist, investor, computer programmer, and inventor.</div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+        <div class="person">
+          <a href="#" class="person__link">
+            <img src="{{static_url("images/person")}}/leonard-dicaprio.jpg" alt="Person" class="person__img">
+            <div class="person__name">
+              <span class="person__firstname">Leonardo</span><br>
+              <span class="person__lastname">Di Caprio</span>
+            </div>
+            <div class="person__bio">
+              <div class="person__dob">Born: 31/2/1988</div>
+              <div class="person__text">William Henry "Bill" Gates III is an American business magnate, philanthropist, investor, computer programmer, and inventor.</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+
+{% end %}
+
+{% block horoscopecard %}
+What does today hold in store for Taureans?
+{% end %}
+
+{% block compatibilitycard %}
+Taurenas are likely to be friends with scorpios and enemies with capricorns
+{% end %}
+
+{% block explorecard %}
+Taureans are very passionate when it comes to feelings.
+{% end %}
+
+
+{% block navbar %}
+  <div class="container small-padding">
+    <ul class="zodiac__list no-margin">
+      <li class="zodiac__item">
+        <a href="/sagittarius" class="active btn-circle zodiac__link sagittarius--reverse">
+          <svg class="zodiac__icon">
+            <use xlink:href="{{static_url("images/sprite.svg")}}#icon-sagittarius" />
+          </svg>
+          <span class="zodiac__text">Sagittarius</span>
+        </a>
+      </li>
+      <li class="zodiac__item">
+        <a href="/capricorn" class="btn-circle zodiac__link capricorn--reverse">
+          <svg class="zodiac__icon">
+            <use xlink:href="{{static_url("images/sprite.svg")}}#icon-capricorn" />
+          </svg>
+          <span class="zodiac__text">Capricorn</span>
+        </a>
+      </li>
+      <li class="zodiac__item">
+        <a href="/aquarius" class=" btn-circle zodiac__link aquarius--reverse">
+          <svg class="zodiac__icon">
+            <use xlink:href="{{static_url("images/sprite.svg")}}#icon-aquarius" />
+          </svg>
+          <span class="zodiac__text">Aquarius</span>
+        </a>
+      </li>
+      <li class="zodiac__item">
+        <a href="/scorpio" class="btn-circle zodiac__link scorpio--reverse">
+          <svg class="zodiac__icon">
+            <use xlink:href="{{static_url("images/sprite.svg")}}#icon-scorpio" />
+          </svg>
+          <span class="zodiac__text">Scorpio</span>
+        </a>
+      </li>
+      <li class="zodiac__item">
+        <a href="/gemini" class="btn-circle zodiac__link gemini--reverse">
+          <svg class="zodiac__icon">
+            <use xlink:href="{{static_url("images/sprite.svg")}}#icon-gemini" />
+          </svg>
+          <span class="zodiac__text">Gemini</span>
+        </a>
+      </li>
+      <li class="zodiac__item">
+        <a href="/pisces" class="btn-circle zodiac__link pisces--reverse">
+          <svg class="zodiac__icon">
+            <use xlink:href="{{static_url("images/sprite.svg")}}#icon-pisces" />
+          </svg>
+          <span class="zodiac__text">Pisces</span>
+        </a>
+      </li>
+      <li class="zodiac__item">
+        <a href="/aries" class="btn-circle zodiac__link aries--reverse">
+          <svg class="zodiac__icon">
+            <use xlink:href="{{static_url("images/sprite.svg")}}#icon-aries" />
+          </svg>
+          <span class="zodiac__text">Aries</span>
+        </a>
+      </li>
+      <li class="zodiac__item">
+        <a href="/virgo" class="btn-circle zodiac__link virgo--reverse">
+          <svg class="zodiac__icon">
+            <use xlink:href="{{static_url("images/sprite.svg")}}#icon-virgo" />
+          </svg>
+          <span class="zodiac__text">Virgo</span>
+        </a>
+      </li>
+      <li class="zodiac__item">
+        <a href="/leo" class="btn-circle zodiac__link leo--reverse">
+          <svg class="zodiac__icon">
+            <use xlink:href="{{static_url("images/sprite.svg")}}#icon-leo" />
+          </svg>
+          <span class="zodiac__text">Leo</span>
+        </a>
+      </li>
+      <li class="zodiac__item">
+        <a href="/taurus" class="btn-circle zodiac__link taurus--reverse">
+          <svg class="zodiac__icon">
+            <use xlink:href="{{static_url("images/sprite.svg")}}#icon-taurus" />
+          </svg>
+          <span class="zodiac__text">Taurus</span>
+        </a>
+      </li>
+      <li class="zodiac__item">
+        <a href="/cancer" class="btn-circle zodiac__link cancer--reverse">
+          <svg class="zodiac__icon">
+            <use xlink:href="{{static_url("images/sprite.svg")}}#icon-cancer" />
+          </svg>
+          <span class="zodiac__text">Cancer</span>
+        </a>
+      </li>
+      <li class="zodiac__item">
+        <a href="/libra" class="btn-circle zodiac__link libra--reverse">
+          <svg class="zodiac__icon">
+            <use xlink:href="{{static_url("images/sprite.svg")}}#icon-libra" />
+          </svg>
+          <span class="zodiac__text">Libra</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+
+         
+
+{% end %}

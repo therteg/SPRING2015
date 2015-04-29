@@ -1,22 +1,24 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html class="no-js" lang="">
 <head>
-<title>Facebook Login JavaScript Example</title>
-<meta charset="UTF-8">
-    <script type="text/javascript" src="{{static_url("js/jquery.min.js")}}"></script>
-  <script type="text/javascript" src="{{static_url("js/bootstrap.min.js")}}"></script>
-</head>
-<body>
-
-<h1 style="color:red">
-    {% block heading %}{% end %}
-</h1>
-
-<div>
-    {% block content %}{% end %}
-</div>
-
-</body>
-</html>
-
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <title>Signs</title>
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
   
+  <link rel="stylesheet" href="{{static_url("styles/plugins.css")}}">
+  <link rel="stylesheet" href="{{static_url("styles/main.css")}}">
+
+  <script src="{{static_url("scripts/vendor/modernizr.js")}}"></script>
+</head>
+
+{% block body %}{% end %}
+
+  <script src="{{static_url("scripts/vendor.js")}}"></script>
+  <script src="{{static_url("scripts/plugins.js")}}"></script>
+  <script src="{{static_url("scripts/main.js")}}"></script>
+</body>
+
+</html>

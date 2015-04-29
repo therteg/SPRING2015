@@ -1,11 +1,136 @@
-{% extends base.html %}
+{% extends main.html %}
 
-{% block heading %}
+{% block zodiac %}
+leo
+{% end %}
+
+{% block mainimage %}
+<image xlink:href="{{static_url("images/scorpio.svg")}}" class="zodiac__img--big" width="50%" height="50%" x="25%" y="25%">
+{% end %}
+
+{% block maintitle %}
 Leo
 {% end %}
 
-{% block content %}
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur auctor, tellus non interdum dignissim, arcu mi accumsan nunc, et ultrices mauris dolor sed mi. Fusce ut pulvinar ipsum. Ut vel quam non ipsum viverra sollicitudin in sed leo. Morbi ultricies molestie tellus, sit amet fringilla ante imperdiet quis. Fusce imperdiet pharetra tempor. Duis eget porttitor magna. Pellentesque bibendum sagittis orci. Nam elementum, magna in mattis accumsan, est lacus gravida sem, sit amet vestibulum tellus diam eu erat. Praesent nec facilisis justo. Fusce tellus turpis, facilisis sit amet nunc at, elementum tincidunt augue.</p>
+{% block horoscope %}
+An unpredictable situation brings out the worst in someone -- you thought you'd never see them like this. After the shock wears off, give thought to what this could mean for your relationship. There are big trust issues involved here, and you might want to pull back on how much you disclose to protect yourself. In contrast, another person you barely know shows you a more quiet side of their personality -- and you're intrigued. Get to know them better.
+{% end %}
 
-<p>Sed a neque velit. Duis sit amet dui ut odio facilisis consectetur non a felis. Integer sed ipsum porta erat ullamcorper malesuada. Morbi accumsan urna sed augue ultrices, et sodales ante mollis. Aliquam pulvinar finibus erat id accumsan. Maecenas sit amet purus id orci congue accumsan ut vel elit. Aliquam tristique ultricies purus, vestibulum laoreet urna fringilla luctus. Ut commodo tortor ut nulla malesuada sodales. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce vel lorem ut urna ultricies pharetra a id nibh. Praesent sed dui vulputate, placerat eros quis, vestibulum erat. Quisque accumsan urna vel velit ultrices, in ornare augue dictum.</p>
+{% block explorecard %}
+Taureans are very passionate when it comes to feelings.
+{% end %}
+
+{% block famouscard %}
+Did you know that Gordon Ramsay and Bill Gates are both taureans?
+{% end %}
+
+{% block famouscardbutton %}
+TAUREANS
+{% end %}
+
+{% block compatibilitycard %}
+Taurenas are likely to be friends with scorpios and enemies with capricorns
+{% end %}
+
+{% block navbar %}
+  <div class="container extra-padding">
+    <ul class="zodiac__list medium-padding">
+      <li class="zodiac__item">
+        <a href="/sagittarius" class="btn-circle zodiac__link sagittarius--reverse">
+          <svg class="zodiac__icon">
+            <use xlink:href="{{static_url("images/sprite.svg")}}#icon-sagittarius" />
+          </svg>
+          <span class="zodiac__text">Sagittarius</span>
+        </a>
+      </li>
+      <li class="zodiac__item">
+        <a href="/capricorn" class="btn-circle zodiac__link capricorn--reverse">
+          <svg class="zodiac__icon">
+            <use xlink:href="{{static_url("images/sprite.svg")}}#icon-capricorn" />
+          </svg>
+          <span class="zodiac__text">Capricorn</span>
+        </a>
+      </li>
+      <li class="zodiac__item">
+        <a href="/aquarius" class="btn-circle zodiac__link aquarius--reverse">
+          <svg class="zodiac__icon">
+            <use xlink:href="{{static_url("images/sprite.svg")}}#icon-aquarius" />
+          </svg>
+          <span class="zodiac__text">Aquarius</span>
+        </a>
+      </li>
+      <li class="zodiac__item">
+        <a href="/scorpio" class="btn-circle zodiac__link scorpio--reverse">
+          <svg class="zodiac__icon">
+            <use xlink:href="{{static_url("images/sprite.svg")}}#icon-scorpio" />
+          </svg>
+          <span class="zodiac__text">Scorpio</span>
+        </a>
+      </li>
+      <li class="zodiac__item">
+        <a href="/gemini" class="btn-circle zodiac__link gemini--reverse">
+          <svg class="zodiac__icon">
+            <use xlink:href="{{static_url("images/sprite.svg")}}#icon-gemini" />
+          </svg>
+          <span class="zodiac__text">Gemini</span>
+        </a>
+      </li>
+      <li class="zodiac__item">
+        <a href="/pisces" class="btn-circle zodiac__link pisces--reverse">
+          <svg class="zodiac__icon">
+            <use xlink:href="{{static_url("images/sprite.svg")}}#icon-pisces" />
+          </svg>
+          <span class="zodiac__text">Pisces</span>
+        </a>
+      </li>
+      <li class="zodiac__item">
+        <a href="/aries" class="btn-circle zodiac__link aries--reverse">
+          <svg class="zodiac__icon">
+            <use xlink:href="{{static_url("images/sprite.svg")}}#icon-aries" />
+          </svg>
+          <span class="zodiac__text">Aries</span>
+        </a>
+      </li>
+      <li class="zodiac__item">
+        <a href="/virgo" class="btn-circle zodiac__link virgo--reverse">
+          <svg class="zodiac__icon">
+            <use xlink:href="{{static_url("images/sprite.svg")}}#icon-virgo" />
+          </svg>
+          <span class="zodiac__text">Virgo</span>
+        </a>
+      </li>
+      <li class="zodiac__item">
+        <a href="/leo" class="active btn-circle zodiac__link leo--reverse">
+          <svg class="zodiac__icon">
+            <use xlink:href="{{static_url("images/sprite.svg")}}#icon-leo" />
+          </svg>
+          <span class="zodiac__text">Leo</span>
+        </a>
+      </li>
+      <li class="zodiac__item">
+        <a href="/taurus" class=" btn-circle zodiac__link taurus--reverse">
+          <svg class="zodiac__icon">
+            <use xlink:href="{{static_url("images/sprite.svg")}}#icon-taurus" />
+          </svg>
+          <span class="zodiac__text">Taurus</span>
+        </a>
+      </li>
+      <li class="zodiac__item">
+        <a href="/cancer" class="btn-circle zodiac__link cancer--reverse">
+          <svg class="zodiac__icon">
+            <use xlink:href="{{static_url("images/sprite.svg")}}#icon-cancer" />
+          </svg>
+          <span class="zodiac__text">Cancer</span>
+        </a>
+      </li>
+      <li class="zodiac__item">
+        <a href="/libra" class="btn-circle zodiac__link libra--reverse">
+          <svg class="zodiac__icon">
+            <use xlink:href="{{static_url("images/sprite.svg")}}#icon-libra" />
+          </svg>
+          <span class="zodiac__text">Libra</span>
+        </a>
+      </li>
+    </ul>
+
 {% end %}
