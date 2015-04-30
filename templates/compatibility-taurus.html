@@ -12,6 +12,156 @@ taurus
 taurus
 {% end %}
 
+{% block compatibilitymenu %}
+
+  <div class="background-wrapper">
+    <div class="container" style="max-width: 1000px;">
+      <ul class="tabs">
+        <li class="tabs__item"><a href="/{% block zodiac %}{% end %}/explore" class="tabs__link ">Overview</a></li>
+        <li class="tabs__item"><a href="/{% block zodiac %}{% end %}/compatibility" class="tabs__link tabs__link--active">Compatibility</a></li>
+        <li class="tabs__item"><a href="/{% block zodiac %}{% end %}/famous"  class="tabs__link">Famous {% block menuzodiacname %}{% end %}</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="carousel">
+    <div class="active carousel__item card--cancer">
+      <div class="carousel__icon--badge">
+        <svg width="32" height="32">
+          <use xlink:href="{{static_url("images/sprite.svg")}}#icon-skull"></use>
+        </svg>
+      </div>
+      <svg width="100%" height="250">
+        <use xlink:href="{{static_url("images/sprite.svg")}}#card-cancer" />
+        <use xlink:href="{{static_url("images/sprite.svg")}}#icon-cancer" width="40%" height="40%" class="carousel__icon" x="30%" y="30%" />
+      </svg>
+    </div>
+    <div class="carousel__item card--sagittarius">
+      <div class="carousel__icon--badge">
+        <svg width="32" height="32">
+          <use xlink:href="{{static_url("images/sprite.svg")}}#icon-heart"></use>
+        </svg>
+      </div>
+      <svg width="100%" height="250">
+        <use xlink:href="{{static_url("images/sprite.svg")}}#card-sagittarius"  />
+        <use xlink:href="{{static_url("images/sprite.svg")}}#icon-sagittarius" width="40%" height="40%" class="carousel__icon" x="30%" y="30%" />
+      </svg>
+    </div>
+    <div class="carousel__item card--capricorn">
+      <div class="carousel__icon--badge">
+        <svg width="32" height="32">
+          <use xlink:href="{{static_url("images/sprite.svg")}}#icon-smile"></use>
+        </svg>
+      </div>
+      <svg width="100%" height="250">
+        <use xlink:href="{{static_url("images/sprite.svg")}}#card-capricorn"  />
+        <use xlink:href="{{static_url("images/sprite.svg")}}#icon-capricorn" width="40%" height="40%" class="carousel__icon" x="30%" y="30%" />
+      </svg>
+    </div>
+    <div class="carousel__item card--aquarius">
+      <div class="carousel__icon--badge">
+        <svg width="32" height="32">
+          <use xlink:href="{{static_url("images/sprite.svg")}}#icon-smile"></use>
+        </svg>
+      </div>
+      <svg width="100%" height="250">
+        <use xlink:href="{{static_url("images/sprite.svg")}}#card-aquarius" />
+        <use xlink:href="{{static_url("images/sprite.svg")}}#icon-aquarius" width="40%" height="40%" class="carousel__icon" x="30%" y="30%" />
+      </svg>
+    </div>
+    <div class="carousel__item  card--scorpio">
+      <div class="carousel__icon--badge">
+        <svg width="32" height="32">
+          <use xlink:href="{{static_url("images/sprite.svg")}}#icon-skull"></use>
+        </svg>
+      </div>
+      <svg width="100%" height="250">
+        <use xlink:href="{{static_url("images/sprite.svg")}}#card-scorpio" />
+        <use xlink:href="{{static_url("images/sprite.svg")}}#icon-scorpio" width="40%" height="40%" class="carousel__icon" x="30%" y="30%" />
+      </svg>
+    </div>
+    <div class="carousel__item card--pisces">
+      <div class="carousel__icon--badge">
+        <svg width="32" height="32">
+          <use xlink:href="{{static_url("images/sprite.svg")}}#icon-heart"></use>
+        </svg>
+      </div>
+      <svg width="100%" height="250">
+        <use xlink:href="{{static_url("images/sprite.svg")}}#card-pisces" />
+        <use xlink:href="{{static_url("images/sprite.svg")}}#icon-pisces" width="40%" height="40%" class="carousel__icon" x="30%" y="30%" />
+      </svg>
+    </div>
+    <div class="carousel__item card--gemini">
+      <div class="carousel__icon--badge">
+        <svg width="32" height="32">
+          <use xlink:href="{{static_url("images/sprite.svg")}}#icon-heart"></use>
+        </svg>
+      </div>
+      <svg width="100%" height="250">
+        <use xlink:href="{{static_url("images/sprite.svg")}}#card-gemini"  />
+        <use xlink:href="{{static_url("images/sprite.svg")}}#icon-gemini" width="40%" height="40%" class="carousel__icon" x="30%" y="30%" />
+      </svg>
+    </div>
+    <div class="carousel__item card--aries">
+      <div class="carousel__icon--badge">
+        <svg width="32" height="32">
+          <use xlink:href="{{static_url("images/sprite.svg")}}#icon-skull"></use>
+        </svg>
+      </div>
+      <svg width="100%" height="250">
+        <use xlink:href="{{static_url("images/sprite.svg")}}#card-aries" />
+        <use xlink:href="{{static_url("images/sprite.svg")}}#icon-aries" width="40%" height="40%" class="carousel__icon" x="30%" y="30%" />
+      </svg>
+    </div>
+    <div class="carousel__item card--virgo">
+      <div class="carousel__icon--badge">
+        <svg width="32" height="32">
+          <use xlink:href="{{static_url("images/sprite.svg")}}#icon-skull"></use>
+        </svg>
+      </div>
+      <svg width="100%" height="250">
+        <use xlink:href="{{static_url("images/sprite.svg")}}#card-virgo" />
+        <use xlink:href="{{static_url("images/sprite.svg")}}#icon-virgo" width="40%" height="40%" class="carousel__icon" x="30%" y="30%" />
+      </svg>
+    </div>
+    <div class="carousel__item card--leo">
+      <div class="carousel__icon--badge">
+        <svg width="32" height="32">
+          <use xlink:href="{{static_url("images/sprite.svg")}}#icon-skull"></use>
+        </svg>
+      </div>
+      <svg width="100%" height="250">
+        <use xlink:href="{{static_url("images/sprite.svg")}}#card-leo" />
+        <use xlink:href="{{static_url("images/sprite.svg")}}#icon-leo" width="40%" height="40%" class="carousel__icon" x="30%" y="30%" />
+      </svg>
+    </div>
+    <div class="carousel__item card--taurus">
+      <div class="carousel__icon--badge">
+        <svg width="32" height="32">
+          <use xlink:href="{{static_url("images/sprite.svg")}}#icon-skull"></use>
+        </svg>
+      </div>
+      <svg width="100%" height="250">
+        <use xlink:href="{{static_url("images/sprite.svg")}}#card-taurus" />
+        <use xlink:href="{{static_url("images/sprite.svg")}}#icon-taurus" width="40%" height="40%" class="carousel__icon" x="30%" y="30%" />
+      </svg>
+    </div>
+
+    <div class="carousel__item card--libra">
+      <div class="carousel__icon--badge">
+        <svg width="32" height="32">
+          <use xlink:href="{{static_url("images/sprite.svg")}}#icon-skull"></use>
+        </svg>
+      </div>
+      <svg width="100%" height="250">
+        <use xlink:href="{{static_url("images/sprite.svg")}}#card-libra" />
+        <use xlink:href="{{static_url("images/sprite.svg")}}#icon-libra" width="40%" height="40%" class="carousel__icon" x="30%" y="30%" />
+      </svg>
+    </div>
+  </div>
+
+{% end %}
+
 {% block compatibilitytext %}
 <div class="article__icon text-center"><svg width="64" height="64"><use xlink:href="{{static_url("images/sprite.svg")}}#icon-heart" /></svg></div>
           <h2 class="article__header text-center">scorpio-cancer compatibility</h2>
