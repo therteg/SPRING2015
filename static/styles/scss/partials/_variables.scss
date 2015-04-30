@@ -1,0 +1,16 @@
+$gutter-size: 10px;
+$column-length: 12;
+//$container-width: 960px;
+
+//Sass Map
+$container-width: (
+	xs: 0,
+	sm: 500px,
+	md: 650px,
+	lg: 1000px,
+	xl: 1200px
+	);
+
+//Sass List
+$size-shortnames: ("xs","sm","md","l","xl");
+
