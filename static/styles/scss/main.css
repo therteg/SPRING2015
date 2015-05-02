@@ -1,0 +1,1261 @@
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../fonts/proximanova-regular-webfont.eot");
+  src: url("../fonts/proximanova-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proximanova-regular-webfont.woff2") format("woff2"), url("../fonts/proximanova-regular-webfont.woff") format("woff"), url("../fonts/proximanova-regular-webfont.ttf") format("truetype"), url("../fonts/proximanova-regular-webfont.svg#proxima_nova_rgregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../fonts/proximanova-light-webfont.eot");
+  src: url("../fonts/proximanova-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proximanova-light-webfont.woff2") format("woff2"), url("../fonts/proximanova-light-webfont.woff") format("woff"), url("../fonts/proximanova-light-webfont.ttf") format("truetype"), url("../fonts/proximanova-light-webfont.svg#proxima_novalight") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../fonts/proximanova-semibold-webfont.eot");
+  src: url("../fonts/proximanova-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proximanova-semibold-webfont.woff2") format("woff2"), url("../fonts/proximanova-semibold-webfont.woff") format("woff"), url("../fonts/proximanova-semibold-webfont.ttf") format("truetype"), url("../fonts/proximanova-semibold-webfont.svg#proxima_novasemibold") format("svg");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../fonts/proximanova-bold-webfont.eot");
+  src: url("../fonts/proximanova-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proximanova-bold-webfont.woff2") format("woff2"), url("../fonts/proximanova-bold-webfont.woff") format("woff"), url("../fonts/proximanova-bold-webfont.ttf") format("truetype"), url("../fonts/proximanova-bold-webfont.svg#proxima_nova_rgbold") format("svg");
+  font-weight: 700;
+  font-style: normal; }
+@font-face {
+  font-family: 'Proxima Nova Extrabold';
+  src: url("../fonts/proximanova-extrabold-webfont.eot");
+  src: url("../fonts/proximanova-extrabold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proximanova-extrabold-webfont.woff2") format("woff2"), url("../fonts/proximanova-extrabold-webfont.woff") format("woff"), url("../fonts/proximanova-extrabold-webfont.ttf") format("truetype"), url("../fonts/proximanova-extrabold-webfont.svg#proxima_novaextrabold") format("svg");
+  font-weight: 900;
+  font-style: normal; }
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url("../fonts/BebasNeue Bold-webfont.eot");
+  src: url("../fonts/BebasNeue Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeue Bold-webfont.woff2") format("woff2"), url("../fonts/BebasNeue Bold-webfont.woff") format("woff"), url("../fonts/BebasNeue Bold-webfont.ttf") format("truetype"), url("../fonts/BebasNeue Bold-webfont.svg#bebas_neuebold") format("svg");
+  font-weight: 700;
+  font-style: normal; }
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url("../fonts/BebasNeue Light-webfont.eot");
+  src: url("../fonts/BebasNeue Light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeue Light-webfont.woff2") format("woff2"), url("../fonts/BebasNeue Light-webfont.woff") format("woff"), url("../fonts/BebasNeue Light-webfont.ttf") format("truetype"), url("../fonts/BebasNeue Light-webfont.svg#bebas_neuelight") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url("../fonts/BebasNeue Regular-webfont.eot");
+  src: url("../fonts/BebasNeue Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeue Regular-webfont.woff2") format("woff2"), url("../fonts/BebasNeue Regular-webfont.woff") format("woff"), url("../fonts/BebasNeue Regular-webfont.ttf") format("truetype"), url("../fonts/BebasNeue Regular-webfont.svg#bebas_neue_regularregular") format("svg");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url("../fonts/BebasNeue Thin-webfont.eot");
+  src: url("../fonts/BebasNeue Thin-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeue Thin-webfont.woff2") format("woff2"), url("../fonts/BebasNeue Thin-webfont.woff") format("woff"), url("../fonts/BebasNeue Thin-webfont.ttf") format("truetype"), url("../fonts/BebasNeue Thin-webfont.svg#bebas_neuethin") format("svg");
+  font-weight: 200;
+  font-style: normal; }
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12 {
+  padding-left: 5px;
+  padding-right: 5px;
+  float: left; }
+
+.row {
+  margin-left: -5px;
+  margin-right: -5px; }
+
+.row:after {
+  content: '';
+  display: table;
+  clear: both; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  font-size: 100%;
+  line-height: 1.2;
+  font-family: Verdana, sans-serif; }
+
+body, h1, h2, h3, h4, blockquote, aside {
+  margin: 0; }
+
+header, footer, aside, nav, section, article, figure {
+  display: block; }
+
+h1 {
+  font-size: 1.75em; }
+
+h2 {
+  font-size: 1.35em; }
+
+h3 {
+  font-size: 1.15em; }
+
+h4 {
+  font-size: 1em; }
+
+a {
+  font-weight: bold;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
+.container {
+  margin-left: auto;
+  margin-right: auto; }
+
+.compact {
+  list-style-type: none;
+  margin-top: 1;
+  margin-bottom: 0;
+  padding-left: 0; }
+
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both; }
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: calc(100% - 10px); }
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12 {
+  padding-left: 5px;
+  padding-right: 5px;
+  float: left; }
+
+.row {
+  margin-left: -5px;
+  margin-right: -5px; }
+
+.row:after {
+  content: '';
+  display: table;
+  clear: both; }
+
+.col-1 {
+  width: 8.33333%; }
+
+.col-2 {
+  width: 16.66667%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-4 {
+  width: 33.33333%; }
+
+.col-5 {
+  width: 41.66667%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-7 {
+  width: 58.33333%; }
+
+.col-8 {
+  width: 66.66667%; }
+
+.col-9 {
+  width: 75%; }
+
+.col-10 {
+  width: 83.33333%; }
+
+.col-11 {
+  width: 91.66667%; }
+
+.col-12 {
+  width: 100%; }
+
+@media (min-width: 0) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(100% - 10px); }
+
+  .col-xs-1 {
+    width: 8.33333%; }
+
+  .col-xs-2 {
+    width: 16.66667%; }
+
+  .col-xs-3 {
+    width: 25%; }
+
+  .col-xs-4 {
+    width: 33.33333%; }
+
+  .col-xs-5 {
+    width: 41.66667%; }
+
+  .col-xs-6 {
+    width: 50%; }
+
+  .col-xs-7 {
+    width: 58.33333%; }
+
+  .col-xs-8 {
+    width: 66.66667%; }
+
+  .col-xs-9 {
+    width: 75%; }
+
+  .col-xs-10 {
+    width: 83.33333%; }
+
+  .col-xs-11 {
+    width: 91.66667%; }
+
+  .col-xs-12 {
+    width: 100%; } }
+@media (min-width: 500px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(100% - 10px); }
+
+  .col-sm-1 {
+    width: 8.33333%; }
+
+  .col-sm-2 {
+    width: 16.66667%; }
+
+  .col-sm-3 {
+    width: 25%; }
+
+  .col-sm-4 {
+    width: 33.33333%; }
+
+  .col-sm-5 {
+    width: 41.66667%; }
+
+  .col-sm-6 {
+    width: 50%; }
+
+  .col-sm-7 {
+    width: 58.33333%; }
+
+  .col-sm-8 {
+    width: 66.66667%; }
+
+  .col-sm-9 {
+    width: 75%; }
+
+  .col-sm-10 {
+    width: 83.33333%; }
+
+  .col-sm-11 {
+    width: 91.66667%; }
+
+  .col-sm-12 {
+    width: 100%; } }
+@media (min-width: 650px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(100% - 10px); }
+
+  .col-md-1 {
+    width: 8.33333%; }
+
+  .col-md-2 {
+    width: 16.66667%; }
+
+  .col-md-3 {
+    width: 25%; }
+
+  .col-md-4 {
+    width: 33.33333%; }
+
+  .col-md-5 {
+    width: 41.66667%; }
+
+  .col-md-6 {
+    width: 50%; }
+
+  .col-md-7 {
+    width: 58.33333%; }
+
+  .col-md-8 {
+    width: 66.66667%; }
+
+  .col-md-9 {
+    width: 75%; }
+
+  .col-md-10 {
+    width: 83.33333%; }
+
+  .col-md-11 {
+    width: 91.66667%; }
+
+  .col-md-12 {
+    width: 100%; } }
+@media (min-width: 1000px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px; }
+
+  .col-lg-1 {
+    width: 8.33333%; }
+
+  .col-lg-2 {
+    width: 16.66667%; }
+
+  .col-lg-3 {
+    width: 25%; }
+
+  .col-lg-4 {
+    width: 33.33333%; }
+
+  .col-lg-5 {
+    width: 41.66667%; }
+
+  .col-lg-6 {
+    width: 50%; }
+
+  .col-lg-7 {
+    width: 58.33333%; }
+
+  .col-lg-8 {
+    width: 66.66667%; }
+
+  .col-lg-9 {
+    width: 75%; }
+
+  .col-lg-10 {
+    width: 83.33333%; }
+
+  .col-lg-11 {
+    width: 91.66667%; }
+
+  .col-lg-12 {
+    width: 100%; } }
+@media (min-width: 1200px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px; }
+
+  .col-xl-1 {
+    width: 8.33333%; }
+
+  .col-xl-2 {
+    width: 16.66667%; }
+
+  .col-xl-3 {
+    width: 25%; }
+
+  .col-xl-4 {
+    width: 33.33333%; }
+
+  .col-xl-5 {
+    width: 41.66667%; }
+
+  .col-xl-6 {
+    width: 50%; }
+
+  .col-xl-7 {
+    width: 58.33333%; }
+
+  .col-xl-8 {
+    width: 66.66667%; }
+
+  .col-xl-9 {
+    width: 75%; }
+
+  .col-xl-10 {
+    width: 83.33333%; }
+
+  .col-xl-11 {
+    width: 91.66667%; }
+
+  .col-xl-12 {
+    width: 100%; } }
+/* @import url(http://fonts.googleapis.com/css?family=Roboto); */
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif; }
+
+.small-padding {
+  padding: 10px 0; }
+
+.medium-padding {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+.extra-padding {
+  padding-top: 40px;
+  padding-bottom: 100px; }
+
+.no-margin {
+  margin: 0; }
+
+@media (min-width: 1000px) {
+  .container-lg {
+    padding-left: 30px;
+    padding-right: 30px; }
+
+  .row-lg {
+    margin-left: -30px;
+    margin-right: -30px; }
+    .row-lg > div[class*='col-'] {
+      padding-left: 30px;
+      padding-right: 30px; }
+
+  .container-xlg {
+    padding-left: 40px;
+    padding-right: 40px; }
+
+  .row-xlg {
+    margin-left: -40px;
+    margin-right: -40px; }
+    .row-xlg > div[class*='col-'] {
+      padding-left: 40px;
+      padding-right: 40px; } }
+@media screen and (min-width: 500px) and (max-width: 649px) {
+  .col-sm-1:nth-child(12n+1),
+  .col-sm-2:nth-child(6n+1),
+  .col-sm-3:nth-child(4n+1),
+  .col-sm-4:nth-child(3n+1),
+  .col-sm-6:nth-child(2n+1) {
+    clear: left; } }
+@media screen and (min-width: 650px) and (max-width: 999px) {
+  .col-md-1:nth-child(12n+1),
+  .col-md-2:nth-child(6n+1),
+  .col-md-3:nth-child(4n+1),
+  .col-md-4:nth-child(3n+1),
+  .col-md-6:nth-child(2n+1) {
+    clear: left; } }
+@media screen and (min-width: 1000px) and (max-width: 1199px) {
+  .col-lg-1:nth-child(12n+1),
+  .col-lg-2:nth-child(6n+1),
+  .col-lg-3:nth-child(4n+1),
+  .col-lg-4:nth-child(3n+1),
+  .col-lg-6:nth-child(2n+1) {
+    clear: left; } }
+@media screen and (min-width: 1200px) {
+  .col-xl-1:nth-child(12n+1),
+  .col-xl-2:nth-child(6n+1),
+  .col-xl-3:nth-child(4n+1),
+  .col-xl-4:nth-child(3n+1),
+  .col-xl-6:nth-child(2n+1) {
+    clear: left; } }
+.text-center {
+  text-align: center; }
+
+.text-justify {
+  text-align: justify; }
+
+@media (min-width: 500px) {
+  .col-sm-offset-3 {
+    margin-left: 25%; } }
+#menu {
+  display: block;
+  margin: 0 auto;
+  /*overflow: visible;*/
+  /* uncomment this if you are using bouncing animations*/
+  /* You can change these default styles any way you want */ }
+  #menu a {
+    cursor: pointer;
+    /* SVG &lt;a&gt; elements don't get this by default, so you need to explicitly set it */
+    outline: none; }
+  #menu .item .sector {
+    transition: all 0.3s linear;
+    fill: transparent;
+    stroke: #000;
+    stroke-width: 2px;
+    stroke-opacity: 0.2; }
+  #menu .item:hover .sector,
+  #menu .item:focus .sector {
+    fill: rgba(0, 0, 0, 0.2); }
+  #menu .icon-wrap {
+    color: #fff; }
+  #menu .menu-trigger {
+    fill: #ea2a55;
+    pointer-events: auto;
+    /* KEEP THIS to make sure it stays clickable even when SVG's pointer events is disabled */ }
+  #menu .menu-trigger:hover,
+  #menu .menu-trigger:focus {
+    cursor: pointer; }
+  #menu symbol {
+    overflow: visible;
+    /* KEEP THIS so that text will not get cut off it it is wider than the icon width */ }
+
+.as-table {
+  display: table;
+  width: 100%; }
+
+.as-table-cell {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center; }
+
+.no-scroll {
+  position: fixed;
+  width: 100%;
+  overflow-y: scroll; }
+
+.background-wrapper {
+  background: url("../images/background-overlay.jpg") no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+  transition: background-image 0.3s ease-in-out; }
+  .background-wrapper.disable-overlay {
+    background-image: url("../images/background.jpg"); }
+  .background-wrapper.full-height {
+    height: 100%; }
+  .background-wrapper.extra-padding {
+    padding-top: 100px;
+    padding-bottom: 100px; }
+  .background-wrapper.medium-padding {
+    padding-top: 50px;
+    padding-bottom: 50px; }
+
+.zodiac {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 500px;
+  max-height: 500px; }
+
+.select-sign h2 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 25px;
+  text-align: center; }
+.select-sign form {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 8px;
+  border-radius: 7px;
+  border: 1px solid rgba(153, 153, 153, 0.2); }
+
+.form-group {
+  display: inline-block;
+  margin-bottom: 0;
+  vertical-align: middle; }
+
+.form-control {
+  display: block;
+  width: 100%;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #fff;
+  border-radius: 7px;
+  box-shadow: none;
+  outline: none;
+  box-sizing: border-box;
+  padding: 6px 12px;
+  height: 44px;
+  font-size: 20px;
+  color: #333; }
+
+.selected_sign {
+  font-family: 'Bebas Neue';
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 89px;
+  margin-top: 20px;
+  text-align: center; }
+
+.zodiac__list {
+  margin-left: -5px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  text-align: center;
+  white-space: nowrap;
+  overflow-y: auto; }
+
+.zodiac__item {
+  display: inline-block;
+  padding: 10px;
+  margin-bottom: 0;
+  white-space: nowrap;
+  overflow: hidden; }
+  @media (min-width: 500px) {
+    .zodiac__item {
+      padding: 0 10px; } }
+
+.zodiac__link {
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+  min-width: 35px;
+  height: 35px;
+  line-height: 35px;
+  white-space: nowrap;
+  transition: all 1s ease-out 0.1s; }
+  .zodiac__link:hover, .zodiac__link:focus, .zodiac__link:active, .zodiac__link.active {
+    color: #fff;
+    text-decoration: none;
+    min-width: 100%; }
+    .zodiac__link:hover .zodiac__icon, .zodiac__link:focus .zodiac__icon, .zodiac__link:active .zodiac__icon, .zodiac__link.active .zodiac__icon {
+      margin-left: 15px;
+      margin-rigth: 15px; }
+    .zodiac__link:hover .zodiac__text, .zodiac__link:focus .zodiac__text, .zodiac__link:active .zodiac__text, .zodiac__link.active .zodiac__text {
+      opacity: 1;
+      right: 0;
+      width: 120px; }
+
+.zodiac__icon {
+  display: block;
+  height: 20px;
+  width: 20px;
+  margin-left: 0;
+  margin-right: 0;
+  transition: all 1s ease-in-out 0s;
+  line-height: 1;
+  float: left; }
+
+.zodiac__text {
+  display: block;
+  font-size: 21px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: normal;
+  line-height: 1;
+  position: relative;
+  right: -100%;
+  opacity: 0;
+  width: 0;
+  transition: all 1s ease-in-out 0s; }
+
+.btn-circle {
+  display: block;
+  border-radius: 25px;
+  border: 1px solid #333;
+  color: #333;
+  padding: 7px 7px; }
+
+.btn-outline {
+  padding: 10px 25px; }
+
+.card {
+  font-family: 'Proxima Nova', sans-serif;
+  background-color: rgba(255, 255, 255, 0.7);
+  background: linear-gradient(180deg, white 0%, #f2f2f2 100%);
+  padding: 90px 30px 30px;
+  color: #333;
+  text-align: center;
+  position: relative;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
+  height: 300px;
+  max-width: 340px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 90px; }
+  @media (min-width: 500px) {
+    .card {
+      margin-bottom: 30px;
+      zoom: 0.5; } }
+  @media (min-width: 650px) {
+    .card {
+      zoom: 0.7; } }
+  @media (min-width: 1000px) {
+    .card {
+      zoom: 0.9; } }
+  @media (min-width: 1200px) {
+    .card {
+      zoom: 1; } }
+  .card--blue {
+    color: #29ABE2; }
+    .card--blue .card__link {
+      color: #29ABE2;
+      border-color: #29ABE2; }
+      .card--blue .card__link:hover {
+        color: #177da8;
+        border-color: #177da8; }
+  .card--yellow {
+    color: #F7931E; }
+    .card--yellow .card__link {
+      color: #F7931E;
+      border-color: #F7931E; }
+      .card--yellow .card__link:hover {
+        color: #c26c07;
+        border-color: #c26c07; }
+  .card--green {
+    color: #39B54A; }
+    .card--green .card__link {
+      color: #39B54A;
+      border-color: #39B54A; }
+      .card--green .card__link:hover {
+        color: #277b32;
+        border-color: #277b32; }
+  .card--orange {
+    color: #F15A24; }
+    .card--orange .card__link {
+      color: #F15A24;
+      border-color: #F15A24; }
+      .card--orange .card__link:hover {
+        color: #bc3b0c;
+        border-color: #bc3b0c; }
+  .card__header {
+    color: #333;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 1.5;
+    margin-bottom: 30px; }
+  .card__link {
+    background: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    display: inline-block;
+    text-transform: uppercase; }
+    .card__link:hover {
+      text-decoration: none; }
+  .card__icon {
+    position: absolute;
+    top: calc(-110px / 2);
+    left: calc(50% - 110px / 2);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 110px;
+    height: 110px; }
+    .card__icon.lightbulb {
+      background-image: url("../images/lightbulb.svg"); }
+    .card__icon.star {
+      background-image: url("../images/star.svg"); }
+    .card__icon.flash {
+      background-image: url("../images/flash.svg"); }
+    .card__icon.planet {
+      background-image: url("../images/planet.svg"); }
+  .card__action {
+    position: absolute;
+    bottom: 30px;
+    width: 100%; }
+
+.created_by {
+  font-family: 'Proxima Nova', sans-serif;
+  color: #666;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 90px;
+  margin-bottom: 60px; }
+
+.sagittarius {
+  border-color: #00A99D;
+  color: #00A99D; }
+  .sagittarius:hover, .sagittarius:focus, .sagittarius:active, .sagittarius.active {
+    color: #fff;
+    background-color: #00A99D; }
+  .sagittarius--reverse {
+    color: #00A99D;
+    border-color: #00A99D; }
+    .sagittarius--reverse:hover, .sagittarius--reverse:focus {
+      background: transparent;
+      border-color: #00A99D;
+      color: #00A99D; }
+    .sagittarius--reverse:active, .sagittarius--reverse.active {
+      background: #00A99D;
+      border-color: #00A99D;
+      color: #fff; }
+
+.capricorn {
+  border-color: #29ABE2;
+  color: #29ABE2; }
+  .capricorn:hover, .capricorn:focus, .capricorn:active, .capricorn.active {
+    color: #fff;
+    background-color: #29ABE2; }
+  .capricorn--reverse {
+    color: #29ABE2;
+    border-color: #29ABE2; }
+    .capricorn--reverse:hover, .capricorn--reverse:focus {
+      background: transparent;
+      border-color: #29ABE2;
+      color: #29ABE2; }
+    .capricorn--reverse:active, .capricorn--reverse.active {
+      background: #29ABE2;
+      border-color: #29ABE2;
+      color: #fff; }
+
+.aquarius {
+  border-color: #0071BC;
+  color: #0071BC; }
+  .aquarius:hover, .aquarius:focus, .aquarius:active, .aquarius.active {
+    color: #fff;
+    background-color: #0071BC; }
+  .aquarius--reverse {
+    color: #0071BC;
+    border-color: #0071BC; }
+    .aquarius--reverse:hover, .aquarius--reverse:focus {
+      background: transparent;
+      border-color: #0071BC;
+      color: #0071BC; }
+    .aquarius--reverse:active, .aquarius--reverse.active {
+      background: #0071BC;
+      border-color: #0071BC;
+      color: #fff; }
+
+.scorpio {
+  border-color: #662D91;
+  color: #662D91; }
+  .scorpio:hover, .scorpio:focus, .scorpio:active, .scorpio.active {
+    color: #fff;
+    background-color: #662D91; }
+  .scorpio--reverse {
+    color: #662D91;
+    border-color: #662D91; }
+    .scorpio--reverse:hover, .scorpio--reverse:focus {
+      background: transparent;
+      border-color: #662D91;
+      color: #662D91; }
+    .scorpio--reverse:active, .scorpio--reverse.active {
+      background: #662D91;
+      border-color: #662D91;
+      color: #fff; }
+
+.gemini {
+  border-color: #9E005D;
+  color: #9E005D; }
+  .gemini:hover, .gemini:focus, .gemini:active, .gemini.active {
+    color: #fff;
+    background-color: #9E005D; }
+  .gemini--reverse {
+    color: #9E005D;
+    border-color: #9E005D; }
+    .gemini--reverse:hover, .gemini--reverse:focus {
+      background: transparent;
+      border-color: #9E005D;
+      color: #9E005D; }
+    .gemini--reverse:active, .gemini--reverse.active {
+      background: #9E005D;
+      border-color: #9E005D;
+      color: #fff; }
+
+.pisces {
+  border-color: #ED1E79;
+  color: #ED1E79; }
+  .pisces:hover, .pisces:focus, .pisces:active, .pisces.active {
+    color: #fff;
+    background-color: #ED1E79; }
+  .pisces--reverse {
+    color: #ED1E79;
+    border-color: #ED1E79; }
+    .pisces--reverse:hover, .pisces--reverse:focus {
+      background: transparent;
+      border-color: #ED1E79;
+      color: #ED1E79; }
+    .pisces--reverse:active, .pisces--reverse.active {
+      background: #ED1E79;
+      border-color: #ED1E79;
+      color: #fff; }
+
+.aries {
+  border-color: #ED1C24;
+  color: #ED1C24; }
+  .aries:hover, .aries:focus, .aries:active, .aries.active {
+    color: #fff;
+    background-color: #ED1C24; }
+  .aries--reverse {
+    color: #ED1C24;
+    border-color: #ED1C24; }
+    .aries--reverse:hover, .aries--reverse:focus {
+      background: transparent;
+      border-color: #ED1C24;
+      color: #ED1C24; }
+    .aries--reverse:active, .aries--reverse.active {
+      background: #ED1C24;
+      border-color: #ED1C24;
+      color: #fff; }
+
+.virgo {
+  border-color: #F7931E;
+  color: #F7931E; }
+  .virgo:hover, .virgo:focus, .virgo:active, .virgo.active {
+    color: #fff;
+    background-color: #F7931E; }
+  .virgo--reverse {
+    color: #F7931E;
+    border-color: #F7931E; }
+    .virgo--reverse:hover, .virgo--reverse:focus {
+      background: transparent;
+      border-color: #F7931E;
+      color: #F7931E; }
+    .virgo--reverse:active, .virgo--reverse.active {
+      background: #F7931E;
+      border-color: #F7931E;
+      color: #fff; }
+
+.leo {
+  border-color: #D9E021;
+  color: #D9E021; }
+  .leo:hover, .leo:focus, .leo:active, .leo.active {
+    color: #fff;
+    background-color: #D9E021; }
+  .leo--reverse {
+    color: #D9E021;
+    border-color: #D9E021; }
+    .leo--reverse:hover, .leo--reverse:focus {
+      background: transparent;
+      border-color: #D9E021;
+      color: #D9E021; }
+    .leo--reverse:active, .leo--reverse.active {
+      background: #fff;
+      border-color: #D9E021;
+      color: #fff; }
+
+.taurus {
+  border-color: #8CC63F;
+  color: #8CC63F; }
+  .taurus:hover, .taurus:focus, .taurus:active, .taurus.active {
+    color: #fff;
+    background-color: #8CC63F; }
+  .taurus--reverse {
+    color: #8CC63F;
+    border-color: #8CC63F; }
+    .taurus--reverse:hover, .taurus--reverse:focus {
+      background: transparent;
+      border-color: #8CC63F;
+      color: #8CC63F; }
+    .taurus--reverse:active, .taurus--reverse.active {
+      background: #fff;
+      border-color: #8CC63F;
+      color: #fff; }
+
+.cancer {
+  border-color: #39B54A;
+  color: #39B54A; }
+  .cancer:hover, .cancer:focus, .cancer:active, .cancer.active {
+    color: #fff;
+    background-color: #39B54A; }
+  .cancer--reverse {
+    color: #39B54A;
+    border-color: #39B54A; }
+    .cancer--reverse:hover, .cancer--reverse:focus {
+      background: transparent;
+      border-color: #39B54A;
+      color: #39B54A; }
+    .cancer--reverse:active, .cancer--reverse.active {
+      background: #fff;
+      border-color: #39B54A;
+      color: #fff; }
+
+.libra {
+  border-color: #006837;
+  color: #006837; }
+  .libra:hover, .libra:focus, .libra:active, .libra.active {
+    color: #fff;
+    background-color: #006837; }
+  .libra--reverse {
+    color: #006837;
+    border-color: #006837; }
+    .libra--reverse:hover, .libra--reverse:focus {
+      background: transparent;
+      border-color: #006837;
+      color: #006837; }
+    .libra--reverse:active, .libra--reverse.active {
+      background: #fff;
+      border-color: #006837;
+      color: #fff; }
+
+.quote {
+  position: relative;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto; }
+  @media (min-width: 500px) {
+    .quote:before, .quote:after {
+      content: "";
+      position: absolute;
+      background-position: center center;
+      background-repeat: no-repeat;
+      width: 80px;
+      height: 80px; }
+    .quote:before {
+      top: 0;
+      left: -100px;
+      background-image: url("../images/quote-open.svg"); }
+    .quote:after {
+      bottom: 0;
+      right: -100px;
+      background-image: url("../images/quote-close.svg"); } }
+  .quote__header {
+    font-size: 32px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: bold;
+    color: #333; }
+  .quote__text {
+    font-family: 'Proxima Nova', sans-serif;
+    color: #666;
+    font-size: 18px;
+    line-height: 29px;
+    text-align: justify; }
+
+.article {
+  margin-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px; }
+  @media (min-width: 650px) {
+    .article {
+      padding-left: 10px;
+      padding-right: 10px; } }
+  .article__header {
+    font-size: 32px;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #333; }
+  .article__text {
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #666;
+    margin-top: 5px;
+    margin-bottom: 5px; }
+
+.article--single .article__header {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+.article--single .article__text {
+  margin-bottom: 20px; }
+
+.tabs {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0; }
+  .tabs:before, .tabs:after {
+    content: " ";
+    display: table; }
+  .tabs:after {
+    clear: both; }
+  @media (min-width: 500px) {
+    .tabs {
+      margin-left: -15px; } }
+  .tabs__item {
+    display: inline-block;
+    width: 33.3%;
+    float: left;
+    text-align: center; }
+    @media (min-width: 500px) {
+      .tabs__item {
+        text-align: left;
+        display: inline-block;
+        padding-left: 15px;
+        padding-right: 15px;
+        float: none;
+        width: auto; } }
+  .tabs__link {
+    display: block;
+    position: relative;
+    font-family: 'Proxima Nova', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 25px 0;
+    opacity: 0.7;
+    transition: all 0.3s linear;
+    white-space: nowrap;
+    letter-spacing: -0.5px; }
+    @media (min-width: 500px) {
+      .tabs__link {
+        letter-spacing: normal;
+        font-size: 14px;
+        white-space: normal; } }
+    .tabs__link:hover, .tabs__link:focus, .tabs__link:active, .tabs__link--active {
+      font-weight: bold;
+      opacity: 1;
+      text-decoration: none; }
+    .tabs__link:after {
+      display: none;
+      content: "";
+      position: absolute;
+      bottom: -3px;
+      left: calc(50% - 6px);
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 10px 12px 10px;
+      border-color: transparent transparent #fff transparent; }
+    .tabs__link--active:after {
+      display: block; }
+
+.carousel {
+  background-color: #fff;
+  border-bottom: 1px solid #f2f2f2;
+  padding: 20px 0; }
+  @media (min-width: 500px) {
+    .carousel {
+      padding: 0; } }
+  .carousel__item {
+    position: relative;
+    max-width: 190px;
+    max-height: 250px;
+    margin-left: auto;
+    margin-right: auto; }
+    .carousel__item:hover {
+      cursor: pointer; }
+  .carousel__icon--badge {
+    position: absolute;
+    top: 30px;
+    right: 8px; }
+
+.card--sagittarius {
+  color: #f2f2f2; }
+  .card--sagittarius .carousel__icon {
+    color: #00A99D; }
+  .card--sagittarius:hover, .card--sagittarius.active {
+    color: #00A99D; }
+    .card--sagittarius:hover .carousel__icon, .card--sagittarius.active .carousel__icon {
+      color: #fff; }
+
+.card--capricorn {
+  color: #f2f2f2; }
+  .card--capricorn .carousel__icon {
+    color: #29ABE2; }
+  .card--capricorn:hover, .card--capricorn.active {
+    color: #29ABE2; }
+    .card--capricorn:hover .carousel__icon, .card--capricorn.active .carousel__icon {
+      color: #fff; }
+
+.card--aquarius {
+  color: #f2f2f2; }
+  .card--aquarius .carousel__icon {
+    color: #0071BC; }
+  .card--aquarius:hover, .card--aquarius.active {
+    color: #0071BC; }
+    .card--aquarius:hover .carousel__icon, .card--aquarius.active .carousel__icon {
+      color: #fff; }
+
+.card--scorpio {
+  color: #f2f2f2; }
+  .card--scorpio .carousel__icon {
+    color: #662D91; }
+  .card--scorpio:hover, .card--scorpio.active {
+    color: #662D91; }
+    .card--scorpio:hover .carousel__icon, .card--scorpio.active .carousel__icon {
+      color: #fff; }
+
+.card--gemini {
+  color: #f2f2f2; }
+  .card--gemini .carousel__icon {
+    color: #9E005D; }
+  .card--gemini:hover, .card--gemini.active {
+    color: #9E005D; }
+    .card--gemini:hover .carousel__icon, .card--gemini.active .carousel__icon {
+      color: #fff; }
+
+.card--pisces {
+  color: #f2f2f2; }
+  .card--pisces .carousel__icon {
+    color: #ED1E79; }
+  .card--pisces:hover, .card--pisces.active {
+    color: #ED1E79; }
+    .card--pisces:hover .carousel__icon, .card--pisces.active .carousel__icon {
+      color: #fff; }
+
+.card--aries {
+  color: #f2f2f2; }
+  .card--aries .carousel__icon {
+    color: #ED1C24; }
+  .card--aries:hover, .card--aries.active {
+    color: #ED1C24; }
+    .card--aries:hover .carousel__icon, .card--aries.active .carousel__icon {
+      color: #fff; }
+
+.card--virgo {
+  color: #f2f2f2; }
+  .card--virgo .carousel__icon {
+    color: #F7931E; }
+  .card--virgo:hover, .card--virgo.active {
+    color: #F7931E; }
+    .card--virgo:hover .carousel__icon, .card--virgo.active .carousel__icon {
+      color: #fff; }
+
+.card--leo {
+  color: #f2f2f2; }
+  .card--leo .carousel__icon {
+    color: #D9E021; }
+  .card--leo:hover, .card--leo.active {
+    color: #D9E021; }
+    .card--leo:hover .carousel__icon, .card--leo.active .carousel__icon {
+      color: #fff; }
+
+.card--taurus {
+  color: #f2f2f2; }
+  .card--taurus .carousel__icon {
+    color: #8CC63F; }
+  .card--taurus:hover, .card--taurus.active {
+    color: #8CC63F; }
+    .card--taurus:hover .carousel__icon, .card--taurus.active .carousel__icon {
+      color: #fff; }
+
+.card--cancer {
+  color: #f2f2f2; }
+  .card--cancer .carousel__icon {
+    color: #39B54A; }
+  .card--cancer:hover, .card--cancer.active {
+    color: #39B54A; }
+    .card--cancer:hover .carousel__icon, .card--cancer.active .carousel__icon {
+      color: #fff; }
+
+.card--libra {
+  color: #f2f2f2; }
+  .card--libra .carousel__icon {
+    color: #006837; }
+  .card--libra:hover, .card--libra.active {
+    color: #006837; }
+    .card--libra:hover .carousel__icon, .card--libra.active .carousel__icon {
+      color: #fff; }
+
+.person {
+  position: relative;
+  margin-bottom: 30px;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto; }
+  .person__name {
+    position: absolute;
+    left: 25px;
+    bottom: 25px; }
+  .person__firstname, .person__lastname {
+    display: inline-block;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 35px;
+    font-weight: normal;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 12px;
+    line-height: 0.8; }
+  .person__firstname {
+    padding-bottom: 3px; }
+  .person__lastname {
+    padding-top: 3px; }
+  .person__img {
+    display: block;
+    max-width: 100%;
+    width: 100%; }
+  .person__bio {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-family: 'Proxima Nova', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 25px;
+    text-align: center;
+    line-height: 1.5;
+    opacity: 0;
+    transition: opacity 1s ease-out; }
+  .person__dob {
+    font-style: italic;
+    margin-top: 35px;
+    margin-bottom: 35px; }
+  .person__link {
+    transform: scale(1);
+    transition: all 0.3s ease-out; }
+    .person__link:hover {
+      transform: scale(1.1); }
+      .person__link:hover .person__bio {
+        display: block;
+        opacity: 1; }
+
+/*# sourceMappingURL=main.css.map */
