@@ -81,6 +81,6 @@ settings = dict(
 application = tornado.web.Application(handlers, **settings)
 
 if __name__ == "__main__":
-    port = os.environ['PORT'] if os.environ['PORT'] else 8888
+    port = os.environ.get('PORT') if os.environ.get('PORT') else 8888
     application.listen(port)
     tornado.ioloop.IOLoop.instance().start()
