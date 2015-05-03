@@ -8,9 +8,33 @@ $(document).ready(function() {
 	        	} 
 	        }, { offset: '-70%' });
 
-	        $('footer').waypoint(function(direction){
+	        if (window.width>500){
+	        	$('footer').waypoint(function(direction){
 	        	if ('down' === direction){
 	        		$('footer .container').removeClass('text').addClass('show');
+	        	}
+	        	}, { offset: '40%' });
+	        } else {
+	        	$('footer .container').removeClass('text').addClass('show');
+	        }
+	        
+
+	        $('.container').waypoint(function(direction){
+	        	if ('down' === direction){
+	        		$('.article').removeClass('text').addClass('show');
+	        	}
+	        }, { offset: '90%' });
+
+	        $('.container').waypoint(function(direction){
+	        	if ('down' === direction){
+	        		$('.article--single').removeClass('text').addClass('show');
+	        	}
+	        }, { offset: '90%' });
+
+
+	        $('.container').waypoint(function(direction){
+	        	if ('down' === direction){
+	        		$('.person').removeClass('text').addClass('show');
 	        	}
 	        }, { offset: '40%' });
 

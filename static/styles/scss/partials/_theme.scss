@@ -9,7 +9,7 @@ body {
   padding: 10px 0;
 }
 .medium-padding {
-  padding-top: 20px;
+  padding-top: 40px;
   padding-bottom: 20px;
 }
 .extra-padding {
@@ -62,12 +62,12 @@ body {
 		clear: left;
 	}
   
-  .container .extra-padding{
-    width:80%;
-    display:inline-block;
-  }
+
 
 }
+
+
+
 @media screen and (min-width: 1000px) and (max-width: 1199px) {
 	.col-lg-1:nth-child(12n+1),
 	.col-lg-2:nth-child(6n+1),
@@ -174,6 +174,10 @@ body {
   @include center-in-parent;
   max-width: 500px;
   max-height: 500px;
+    -webkit-transition:all 1s;
+    -o-transition:all 1s;
+    -moz-transition:all 1s;
+    transition:all 1s;
 }
 .select-sign {
   h2 {
@@ -225,67 +229,67 @@ body {
   margin-bottom: 0;
   padding-left: 0;
   text-align: center;
-	white-space: nowrap;
-	overflow-y: auto;
+	// overflow-y: auto;
 }
 .zodiac__item {
   display: inline-block;
   padding: 10px;
   margin-bottom: 0;
   white-space: nowrap;
-  overflow: hidden;
+  position:relative;
   @include respond-to('sm') {
     padding: 0 10px;
   }
 }
 .zodiac__link {
-	overflow: hidden;
-  position: relative;
+  text-align: center;
+  // position: relative;
   color: #fff;
-  min-width: 35px;
+  width: 35px;
   height: 35px;
 	line-height: 35px;
 	white-space: nowrap;
   transition: all 1s ease-out 0.1s;
+  margin: 0 12px;
   &:hover,
   &:focus,
   &:active,
   &.active {
-    color: #fff;
-    text-decoration: none;
-		min-width: 100%;
-		.zodiac__icon {
-			margin-left: 15px;
-			margin-rigth: 15px;
-		}
+  //   color: #fff;
+  //   text-decoration: none;
+		// min-width: 100%;
+		// .zodiac__icon {
+		// 	margin-left: 15px;
+		// 	margin-rigth: 15px;
+		// }
     .zodiac__text {
-      opacity: 1;
-			right: 0;
-			width: 120px;
+      opacity:1;
     }
   }
 }
 .zodiac__icon {
-	display: block;
+	display: inline-block;
   height: 20px;
   width: 20px;
 	margin-left: 0;
 	margin-right: 0;
   transition: all 1s ease-in-out 0s;
 	line-height: 1;
-	float: left;
 }
 .zodiac__text {
-  display: block;
+  opacity:0;
+  display: inline-block;
   font-size: 21px;
   font-family: 'Bebas Neue', sans-serif;
   font-weight: normal;
   line-height: 1;
-	position: relative;
-	right: -100%;
-  opacity: 0;
-	width: 0;
-  transition: all 1s ease-in-out 0s;
+	position: absolute;
+  left: 0;
+  right: 0;
+	top: 120%;
+	// width: 0;
+  overflow-x:visible;
+  transition: all 0.2s ease-in-out 0s;
 }
 .btn-circle {
   display: block;
@@ -301,7 +305,7 @@ body {
   font-family: 'Proxima Nova', sans-serif;
   background-color: rgba(255, 255, 255, 0.7);
   background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(242, 242, 242, 1) 100%);
-  padding: 90px 30px 30px;
+  padding: 90px 0;
   color: #333;
   text-align: center;
   position: relative;
@@ -312,8 +316,7 @@ body {
 	margin-right: auto;
   margin-bottom: 90px;
   @include respond-to('sm') {
-    margin-bottom: 30px;
-		zoom: 0.5;
+    margin-bottom: 10em;
   }
 	@include respond-to('md') {
 		zoom: 0.7;
@@ -374,6 +377,7 @@ body {
     font-size: 22px;
     line-height: 1.5;
     margin-bottom: 30px;
+      padding: 0 1em;
   }
   &__link {
     background: #fff;
@@ -407,6 +411,7 @@ body {
     }
   }
 	&__action {
+    position:absolute;
 		bottom: 30px;
 		width:100%;
 	}
@@ -418,7 +423,7 @@ body {
   padding:5em 0;
   font-size: 18px;
   text-align: center;
-  margin-top: 90px;
+  margin-top: 0;
 }
 .sagittarius {
   border-color: $sagittarius;
@@ -761,12 +766,10 @@ body {
     &:before {
       top: 0;
       left: -100px;
-      background-image: url("../images/quote-open.svg");
     }
     &:after {
       bottom: 0;
       right: -100px;
-      background-image: url("../images/quote-close.svg");
     }
   }
   &__header {
@@ -792,20 +795,32 @@ body {
 		padding-right: 10px;
 	}
   &__header {
+    padding:1em 0 0.5em 0;
     font-size: 32px;
     font-family: 'Bebas Neue', sans-serif;
     color: #333;
   }
   &__text {
+    display:inline-block;
+    width:70%;
+    text-align: left;
     font-family: 'Proxima Nova', sans-serif;
     font-size: 18px;
-    line-height: 1.5;
+    line-height: 1.8;
     color: #666;
     margin-top: 5px;
     margin-bottom: 5px;
   }
 }
 .article {
+  &--single{
+    opacity:0;
+    margin-bottom: 8em;
+     -webkit-transition:all 1s;
+    -o-transition:all 1s;
+    -moz-transition:all 1s;
+    transition:all 1s;
+  }
   &--single &__header {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -1063,15 +1078,21 @@ body {
   }
 }
 .person {
+  opacity:0;
   position: relative;
   margin-bottom: 30px;
 	max-width: 300px;
 	margin-left: auto;
 	margin-right: auto;
+   -webkit-transition:all 1s;
+    -o-transition:all 1s;
+    -moz-transition:all 1s;
+    transition:all 1s;
   &__name {
     position: absolute;
-    left: 25px;
-    bottom: 25px;
+    width:100%;
+    bottom:0;
+    background-color:rgba(0,0,0, 0.5);
   }
   &__firstname,
   &__lastname {
@@ -1079,8 +1100,7 @@ body {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 35px;
     font-weight: normal;
-    background-color: transparentize(#000, 0.3);
-    color: #fff;
+    color: white;
     padding: 12px;
     line-height: 0.8;
   }
@@ -1108,7 +1128,7 @@ body {
     color: #fff;
     background-color: transparentize(#000, 0.2);
     padding: 25px;
-    text-align: center;
+    text-align: left;
     line-height: 1.5;
     opacity: 0;
     transition: opacity 1s ease-out;
@@ -1132,6 +1152,7 @@ body {
 }
 
 .text{
+
   opacity:0;
   -webkit-transition:all 1s;
     -o-transition:all 1s;
@@ -1158,3 +1179,186 @@ footer .extra-padding{
 .container{
   text-align: center;
 }
+
+
+  @media screen and (max-width: 500px) {
+    .container{
+      width:100%;
+    }
+  .zodiac{
+      padding:2em;
+    }
+
+    .created_by{
+      margin-top:0;
+    }
+
+    .person{
+      max-width: 500px;
+      margin-bottom: 0;
+    }
+
+    #famous .extra-padding {
+      padding-top:0;
+
+    }
+
+    #famous .container{
+      width:100%;
+    }
+
+    .background-wrapper.extra-padding {
+  padding-top: 0;
+}
+
+    .person__name{
+      position:relative;
+      background-color:rgba(0,0,0,1);
+      padding:1em 0;
+    }
+
+    .person__bio{
+      position:relative;
+      display:block;
+      opacity:1;
+      background-color:rgba(0,0,0,1);
+      padding-bottom:6em;
+      line-height: 2em;
+      padding-top:0;
+    }
+
+    .person__dob{
+      margin-top:0;
+      margin-bottom:20px;
+    }
+
+    .card__icon{
+      display:none;
+    }
+
+    .card__header{
+      display:none;
+    }
+
+    .card{
+      background-color:rgba(255,255,255,0);
+        background:none;
+        max-width:500px;
+        box-shadow:none;
+        height:0;
+        margin-bottom: 0;
+        padding:25px 0;
+    }
+
+    .card__link{
+      display:block;
+      font-size:16px;
+      padding:1em 0;
+    }
+  }
+
+  @media screen and (max-width: 600px) and (min-width: 500px) {
+    .zodiac{
+      padding:4em;
+    }
+  }
+
+
+@media screen and (max-width: 650px) {
+
+    .container .extra-padding{
+    width:85%;
+    display:inline-block;
+    }
+
+    .quote__text{
+      font-size: 16px;
+    }
+
+    .card__header{
+      font-size:16px;
+      margin-bottom: 60px;
+    }
+
+    .article__text{
+      width:85%;
+      font-size:16px;
+    }
+
+  }
+
+  @media screen and (max-width: 750px) and (min-width: 500px) {
+    ul, menu, dir {
+  display: block;
+  list-style-type: disc;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0;
+}
+
+    .zodiac__icon{
+      display: none;
+    }
+
+    .zodiac__text{
+      top:7px;
+      opacity:1;
+    }
+
+    .btn-circle {
+  border-radius: 0;
+  width:100%;
+  
+    }
+
+    .zodiac__link{
+      margin:0;
+    }
+
+    .zodiac__item{
+      width:25%;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+ 
+
+    .zodiac__icon{
+      display: none;
+    }
+
+    .zodiac__text{
+      top:17px;
+      opacity:1;
+    }
+
+    .btn-circle {
+  border-radius: 0;
+  width:100%;
+  
+    }
+
+    .zodiac__link{
+      margin:0;
+    }
+
+    .zodiac__item{
+      width:49%;
+    }
+  }
+
+  @media screen and (min-width: 750px) {
+    .zodiac__item{
+      margin-bottom: 3em;
+    }
+    
+  }
+
+
+  .last_article{
+    padding-bottom:5em;
+  }
+
+

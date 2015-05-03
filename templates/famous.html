@@ -2,7 +2,7 @@
 
 {% block body %}
 
-<body>
+<body id="famous">
   <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -22,9 +22,9 @@
 {% block famous %}{% end %}
 
   <footer class="background-wrapper extra-padding">
-    <div class="container container-lg">
+    <div class="container text container-lg">
       <div class="row row-lg">
-        <div class="col-sm-4 col-xs-12">
+        <div class="col-md-4 col-xs-12">
           <div class="card card--blue">
             <div class="card__icon lightbulb"></div>
             <h2 class="card__header">{% block explorecard %}{% end %} </h2>
@@ -33,7 +33,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-4 col-xs-12">
+        <div class="col-md-4 col-xs-12">
           <div class="card card--orange">
             <div class="card__icon planet"></div>
             <h2 class="card__header">{% block horoscopecard %}{% end %}</h2>
@@ -42,7 +42,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-4 col-xs-12">
+        <div class="col-md-4 col-xs-12">
           <div class="card card--green">
             <div class="card__icon flash"></div>
             <h2 class="card__header">{% block compatibilitycard %}{% end %}</h2>

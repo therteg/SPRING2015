@@ -21,24 +21,24 @@
 
   <div class="container container-xlg extra-padding" style="max-width: 1000px;">
     <div class="row row-xlg">
-      <div class="col-md-6 col-sm-12 col-xs-12">
-        <article class="article">
+      <div class="col-sm-12 col-xs-12">
+        <article class="article text">
           <h2 class="article__header"><svg width="24" height="24"><use xlink:href="{{static_url("images/sprite.svg")}}#icon-exclamation-circle" /></svg> about {% block aboutname %}{% end %}</h2>
           <p class="article__text">{% block about %}{% end %}</p>
         </article>
 
-        <article class="article">
+        <article class="article text">
           <h2 class="article__header"><svg width="24" height="24"><use xlink:href="{{static_url("images/sprite.svg")}}#icon-thumbs-up" /></svg> positive traits</h2>
           <p class="article__text">{% block positivetraits %}{% end %}</p>
         </article>
       </div>
-      <div class="col-md-6 col-sm-12 col-xs-12">
-        <article class="article">
+      <div class="col-sm-12 col-xs-12">
+        <article class="article text">
           <h2 class="article__header"><svg width="24" height="24"><use xlink:href="{{static_url("images/sprite.svg")}}#icon-leaf" /></svg> feeling lucky?</h2>{% block lucky %}{% end %}
         </article>
-        <article class="article">
+        <article class="article text">
           <h2 class="article__header"><svg width="24" height="24"><use xlink:href="{{static_url("images/sprite.svg")}}#icon-thumbs-down" /></svg> negative traits</h2>
-          <p class="article__text">{% block negativetraits %}{% end %}</p>
+          <p class="article__text last_article">{% block negativetraits %}{% end %}</p>
         </article>
       </div>
     </div>
@@ -47,9 +47,9 @@
 
 
   <footer class="background-wrapper extra-padding">
-    <div class="container container-lg">
+    <div class="container text container-lg">
       <div class="row row-lg">
-        <div class="col-sm-4 col-xs-12">
+        <div class="col-md-4 col-xs-12">
           <div class="card card--orange">
             <div class="card__icon planet"></div>
             <h2 class="card__header">{% block horoscopecard %}{% end %}</h2>
@@ -58,7 +58,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-4 col-xs-12">
+        <div class="col-md-4 col-xs-12">
           <div class="card card--yellow">
             <div class="card__icon star"></div>
             <h2 class="card__header">{% block famouscard %}{% end %}</h2>
@@ -67,7 +67,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-4 col-xs-12">
+        <div class="col-md-4 col-xs-12">
           <div class="card card--green">
             <div class="card__icon flash"></div>
             <h2 class="card__header">{% block compatibilitycard %}{% end %}</h2>
