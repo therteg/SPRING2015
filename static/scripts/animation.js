@@ -8,12 +8,13 @@ $(document).ready(function() {
 	        	} 
 	        }, { offset: '-70%' });
 
-	        if (window.width>500){
+	        if (document.body.clientWidth>500){
+	        	
 	        	$('footer').waypoint(function(direction){
 	        	if ('down' === direction){
 	        		$('footer .container').removeClass('text').addClass('show');
 	        	}
-	        	}, { offset: '-40%' });
+	        	}, { offset: '40%' });
 	        } else {
 	        	$('footer .container').removeClass('text').addClass('show');
 	        }

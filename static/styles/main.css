@@ -378,8 +378,7 @@ html,
 body {
   height: 100%;
   width: 100%;
-  font-family: 'Roboto', sans-serif;
-  overflow-x: hidden; }
+  font-family: 'Roboto', sans-serif; }
 
 .small-padding {
   padding: 10px 0; }
