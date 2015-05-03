@@ -39,6 +39,10 @@ $(document).ready(function() {
 	        	}
 	        }, { offset: '40%' });
 
+
+	        //hash tag position
+	        $
+
 	// Initialize wheel animation
 	initializeWheelAnimation();
 })

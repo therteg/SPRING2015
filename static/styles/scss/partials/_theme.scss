@@ -425,6 +425,10 @@ body {
   text-align: center;
   margin-top: 0;
 }
+
+.zodiac__link.active{
+
+}
 .sagittarius {
   border-color: $sagittarius;
   color: $sagittarius;
@@ -434,8 +438,12 @@ body {
   &.active {
     color: #fff;
     background-color: $sagittarius;
+
   }
   &--reverse {
+     & .zodiac__text{
+      color: $sagittarius;
+    }
     color: $sagittarius;
     border-color: $sagittarius;
     &:hover,
@@ -449,6 +457,7 @@ body {
       background: $sagittarius;
       border-color: $sagittarius;
       color: #fff;
+     
     }
   }
 }
@@ -463,6 +472,9 @@ body {
     background-color: $capricorn;
   }
   &--reverse {
+    & .zodiac__text{
+      color: $capricorn;
+    }
     color: $capricorn;
     border-color: $capricorn;
     &:hover,
@@ -490,6 +502,9 @@ body {
     background-color: $aquarius;
   }
   &--reverse {
+    & .zodiac__text{
+      color: $aquarius;
+    }
     color: $aquarius;
     border-color: $aquarius;
     &:hover,
@@ -517,6 +532,9 @@ body {
     background-color: $scorpio;
   }
   &--reverse {
+    & .zodiac__text{
+      color: $scorpio;
+    }
     color: $scorpio;
     border-color: $scorpio;
     &:hover,
@@ -544,6 +562,9 @@ body {
     background-color: $gemini;
   }
   &--reverse {
+    & .zodiac__text{
+      color: $gemini;
+    }
     color: $gemini;
     border-color: $gemini;
     &:hover,
@@ -571,6 +592,9 @@ body {
     background-color: $pisces;
   }
   &--reverse {
+    & .zodiac__text{
+      color: $pisces;
+    }
     color: $pisces;
     border-color: $pisces;
     &:hover,
@@ -598,6 +622,9 @@ body {
     background-color: $aries;
   }
   &--reverse {
+    & .zodiac__text{
+      color: $aries;
+    }
     color: $aries;
     border-color: $aries;
     &:hover,
@@ -625,6 +652,9 @@ body {
     background-color: $virgo;
   }
   &--reverse {
+    & .zodiac__text{
+      color: $virgo;
+    }
     color: $virgo;
     border-color: $virgo;
     &:hover,
@@ -652,6 +682,9 @@ body {
     background-color: $leo;
   }
   &--reverse {
+    & .zodiac__text{
+      color: $leo;
+    }
     color: $leo;
     border-color: $leo;
     &:hover,
@@ -662,7 +695,7 @@ body {
     }
     &:active,
     &.active {
-      background: #fff;
+      background: $leo;
       border-color: $leo;
       color: #fff;
     }
@@ -679,6 +712,9 @@ body {
     background-color: $taurus;
   }
   &--reverse {
+    & .zodiac__text{
+      color: $taurus;
+    }
     color: $taurus;
     border-color: $taurus;
     &:hover,
@@ -689,7 +725,7 @@ body {
     }
     &:active,
     &.active {
-      background: #fff;
+      background: $taurus;
       border-color: $taurus;
       color: #fff;
     }
@@ -706,6 +742,9 @@ body {
     background-color: $cancer;
   }
   &--reverse {
+    & .zodiac__text{
+      color: $cancer;
+    }
     color: $cancer;
     border-color: $cancer;
     &:hover,
@@ -716,7 +755,7 @@ body {
     }
     &:active,
     &.active {
-      background: #fff;
+      background: $cancer;
       border-color: $cancer;
       color: #fff;
     }
@@ -733,6 +772,9 @@ body {
     background-color: $libra;
   }
   &--reverse {
+    & .zodiac__text{
+      color: $libra;
+    }
     color: $libra;
     border-color: $libra;
     &:hover,
@@ -743,7 +785,7 @@ body {
     }
     &:active,
     &.active {
-      background: #fff;
+      background: $libra;
       border-color: $libra;
       color: #fff;
     }
@@ -1377,8 +1419,409 @@ footer .extra-padding{
   @media screen and (min-width: 750px) {
     .zodiac__item{
       margin-bottom: 3em;
-    }
+    }  
     
+
+  }
+
+  @media screen and (max-width:750px) {
+    .sagittarius {
+  border-color: $sagittarius;
+  color: $sagittarius;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    color: #fff;
+    background-color: $sagittarius;
+
+  }
+  &--reverse {
+     
+    color: $sagittarius;
+    border-color: $sagittarius;
+    &:hover,
+    &:focus {
+      background: transparent;
+      border-color: $sagittarius;
+      color: $sagittarius;
+    }
+    &:active,
+    &.active {
+      background: $sagittarius;
+      border-color: $sagittarius;
+      color: $sagittarius;
+      & .zodiac__text{
+      color: white;
+    }
+     
+    }
+  }
+}
+.capricorn {
+  border-color: $capricorn;
+  color: $capricorn;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    color: #fff;
+    background-color: $capricorn;
+  }
+  &--reverse {
+    & .zodiac__text{
+      color: $capricorn;
+    }
+    color: $capricorn;
+    border-color: $capricorn;
+    &:hover,
+    &:focus {
+      background: transparent;
+      border-color: $capricorn;
+      color: $capricorn;
+    }
+    &:active,
+    &.active {
+      background: $capricorn;
+      border-color: $capricorn;
+      color: #fff;
+      & .zodiac__text{
+      color: white;
+    }
+
+    }
+  }
+}
+.aquarius {
+  border-color: $aquarius;
+  color: $aquarius;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    color: #fff;
+    background-color: $aquarius;
+  }
+  &--reverse {
+    & .zodiac__text{
+      color: $aquarius;
+    }
+    color: $aquarius;
+    border-color: $aquarius;
+    &:hover,
+    &:focus {
+      background: transparent;
+      border-color: $aquarius;
+      color: $aquarius;
+    }
+    &:active,
+    &.active {
+      background: $aquarius;
+      border-color: $aquarius;
+      color: #fff;
+      & .zodiac__text{
+      color: white;
+    }
+    }
+  }
+}
+.scorpio {
+  border-color: $scorpio;
+  color: $scorpio;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    color: #fff;
+    background-color: $scorpio;
+  }
+  &--reverse {
+    & .zodiac__text{
+      color: $scorpio;
+    }
+    color: $scorpio;
+    border-color: $scorpio;
+    &:hover,
+    &:focus {
+      background: transparent;
+      border-color: $scorpio;
+      color: $scorpio;
+    }
+    &:active,
+    &.active {
+      background: $scorpio;
+      border-color: $scorpio;
+      color: #fff;
+      & .zodiac__text{
+      color: white;
+    }
+    }
+  }
+}
+.gemini {
+  border-color: $gemini;
+  color: $gemini;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    color: #fff;
+    background-color: $gemini;
+  }
+  &--reverse {
+    & .zodiac__text{
+      color: $gemini;
+    }
+    color: $gemini;
+    border-color: $gemini;
+    &:hover,
+    &:focus {
+      background: transparent;
+      border-color: $gemini;
+      color: $gemini;
+    }
+    &:active,
+    &.active {
+      background: $gemini;
+      border-color: $gemini;
+      color: #fff;
+      & .zodiac__text{
+      color: white;
+    }
+    }
+  }
+}
+.pisces {
+  border-color: $pisces;
+  color: $pisces;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    color: #fff;
+    background-color: $pisces;
+  }
+  &--reverse {
+    & .zodiac__text{
+      color: $pisces;
+    }
+    color: $pisces;
+    border-color: $pisces;
+    &:hover,
+    &:focus {
+      background: transparent;
+      border-color: $pisces;
+      color: $pisces;
+    }
+    &:active,
+    &.active {
+      background: $pisces;
+      border-color: $pisces;
+      color: #fff;
+      & .zodiac__text{
+      color: white;
+    }
+    }
+  }
+}
+.aries {
+  border-color: $aries;
+  color: $aries;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    color: #fff;
+    background-color: $aries;
+  }
+  &--reverse {
+    & .zodiac__text{
+      color: $aries;
+    }
+    color: $aries;
+    border-color: $aries;
+    &:hover,
+    &:focus {
+      background: transparent;
+      border-color: $aries;
+      color: $aries;
+    }
+    &:active,
+    &.active {
+      background: $aries;
+      border-color: $aries;
+      color: #fff;
+      & .zodiac__text{
+      color: white;
+    }
+    }
+  }
+}
+.virgo {
+  border-color: $virgo;
+  color: $virgo;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    color: #fff;
+    background-color: $virgo;
+  }
+  &--reverse {
+    & .zodiac__text{
+      color: $virgo;
+    }
+    color: $virgo;
+    border-color: $virgo;
+    &:hover,
+    &:focus {
+      background: transparent;
+      border-color: $virgo;
+      color: $virgo;
+    }
+    &:active,
+    &.active {
+      background: $virgo;
+      border-color: $virgo;
+      color: #fff;
+      & .zodiac__text{
+      color: white;
+    }
+    }
+  }
+}
+.leo {
+  border-color: $leo;
+  color: $leo;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    color: #fff;
+    background-color: $leo;
+  }
+  &--reverse {
+    & .zodiac__text{
+      color: $leo;
+    }
+    color: $leo;
+    border-color: $leo;
+    &:hover,
+    &:focus {
+      background: transparent;
+      border-color: $leo;
+      color: $leo;
+    }
+    &:active,
+    &.active {
+      background: $leo;
+      border-color: $leo;
+      color: #fff;
+      & .zodiac__text{
+      color: white;
+    }
+    }
+  }
+}
+.taurus {
+  border-color: $taurus;
+  color: $taurus;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    color: #fff;
+    background-color: $taurus;
+  }
+  &--reverse {
+    & .zodiac__text{
+      color: $taurus;
+    }
+    color: $taurus;
+    border-color: $taurus;
+    &:hover,
+    &:focus {
+      background: transparent;
+      border-color: $taurus;
+      color: $taurus;
+    }
+    &:active,
+    &.active {
+      background: $taurus;
+      border-color: $taurus;
+      color: #fff;
+      & .zodiac__text{
+      color: white;
+    }
+    }
+  }
+}
+.cancer {
+  border-color: $cancer;
+  color: $cancer;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    color: #fff;
+    background-color: $cancer;
+  }
+  &--reverse {
+    & .zodiac__text{
+      color: $cancer;
+    }
+    color: $cancer;
+    border-color: $cancer;
+    &:hover,
+    &:focus {
+      background: transparent;
+      border-color: $cancer;
+      color: $cancer;
+    }
+    &:active,
+    &.active {
+      background: $cancer;
+      border-color: $cancer;
+      color: #fff;
+      & .zodiac__text{
+      color: white;
+    }
+    }
+  }
+}
+.libra {
+  border-color: $libra;
+  color: $libra;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    color: #fff;
+    background-color: $libra;
+  }
+  &--reverse {
+    & .zodiac__text{
+      color: $libra;
+    }
+    color: $libra;
+    border-color: $libra;
+    &:hover,
+    &:focus {
+      background: transparent;
+      border-color: $libra;
+      color: $libra;
+    }
+    &:active,
+    &.active {
+      background: $libra;
+      border-color: $libra;
+      color: #fff;
+      & .zodiac__text{
+      color: white;
+    }
+    }
+  }
+}
   }
 
 
