@@ -13,7 +13,7 @@ $(document).ready(function() {
 	        	if ('down' === direction){
 	        		$('footer .container').removeClass('text').addClass('show');
 	        	}
-	        	}, { offset: '40%' });
+	        	}, { offset: '-40%' });
 	        } else {
 	        	$('footer .container').removeClass('text').addClass('show');
 	        }
