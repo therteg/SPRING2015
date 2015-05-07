@@ -330,6 +330,7 @@ body {
   &--blue {
     color: $capricorn;
     .card__link {
+      border:1px solid;
       color: $capricorn;
       border-color: $capricorn;
       &:hover {
@@ -341,6 +342,7 @@ body {
   &--yellow {
     color: $virgo;
     .card__link {
+      border:1px solid;
       color: $virgo;
       border-color: $virgo;
       &:hover {
@@ -352,6 +354,7 @@ body {
   &--green {
     color: $cancer;
     .card__link {
+      border:1px solid;
       color: $cancer;
       border-color: $cancer;
       &:hover {
@@ -363,6 +366,7 @@ body {
   &--orange {
     color: $orange;
     .card__link {
+      border:1px solid;
       color: $orange;
       border-color: $orange;
       &:hover {
@@ -1395,21 +1399,25 @@ footer .extra-padding{
     }
 
     .card--blue .card__link{
+      border:none;
       color:white;
       background-color: #29ABE2;
     }
 
     .card--yellow .card__link{
+      border:none;
       color:white;
       background-color: #F7931E;
     }
 
     .card--green .card__link{
+      border:none;
       color:white;
       background-color: #39B54A;    
     }
 
     .card--orange .card__link{
+      border:none;
       color:white;
       background-color: #f15a24;    
     }

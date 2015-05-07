@@ -652,6 +652,7 @@ body {
   .card--blue {
     color: #29ABE2; }
     .card--blue .card__link {
+      border: 1px solid;
       color: #29ABE2;
       border-color: #29ABE2; }
       .card--blue .card__link:hover {
@@ -660,6 +661,7 @@ body {
   .card--yellow {
     color: #F7931E; }
     .card--yellow .card__link {
+      border: 1px solid;
       color: #F7931E;
       border-color: #F7931E; }
       .card--yellow .card__link:hover {
@@ -668,6 +670,7 @@ body {
   .card--green {
     color: #39B54A; }
     .card--green .card__link {
+      border: 1px solid;
       color: #39B54A;
       border-color: #39B54A; }
       .card--green .card__link:hover {
@@ -676,6 +679,7 @@ body {
   .card--orange {
     color: #F15A24; }
     .card--orange .card__link {
+      border: 1px solid;
       color: #F15A24;
       border-color: #F15A24; }
       .card--orange .card__link:hover {
@@ -1434,18 +1438,22 @@ footer .extra-padding {
     position: static; }
 
   .card--blue .card__link {
+    border: none;
     color: white;
     background-color: #29ABE2; }
 
   .card--yellow .card__link {
+    border: none;
     color: white;
     background-color: #F7931E; }
 
   .card--green .card__link {
+    border: none;
     color: white;
     background-color: #39B54A; }
 
   .card--orange .card__link {
+    border: none;
     color: white;
     background-color: #f15a24; } }
 @media screen and (min-width: 750px) {
