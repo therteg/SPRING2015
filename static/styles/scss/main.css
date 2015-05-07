@@ -384,21 +384,16 @@ body {
   padding: 10px 0; }
 
 .medium-padding {
-  padding-top: 20px;
+  padding-top: 40px;
   padding-bottom: 20px; }
 
 .extra-padding {
-  padding-top: 40px;
-  padding-bottom: 100px; }
+  padding-top: 40px; }
 
 .no-margin {
   margin: 0; }
 
 @media (min-width: 1000px) {
-  .container-lg {
-    padding-left: 30px;
-    padding-right: 30px; }
-
   .row-lg {
     margin-left: -30px;
     margin-right: -30px; }
@@ -510,8 +505,7 @@ body {
   .background-wrapper.full-height {
     height: 100%; }
   .background-wrapper.extra-padding {
-    padding-top: 100px;
-    padding-bottom: 100px; }
+    padding-top: 100px; }
   .background-wrapper.medium-padding {
     padding-top: 50px;
     padding-bottom: 50px; }
@@ -520,7 +514,11 @@ body {
   margin-left: auto;
   margin-right: auto;
   max-width: 500px;
-  max-height: 500px; }
+  max-height: 500px;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s; }
 
 .select-sign h2 {
   color: #fff;
@@ -568,62 +566,52 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
-  text-align: center;
-  white-space: nowrap;
-  overflow-y: auto; }
+  text-align: center; }
 
 .zodiac__item {
   display: inline-block;
   padding: 10px;
   margin-bottom: 0;
   white-space: nowrap;
-  overflow: hidden; }
+  position: relative; }
   @media (min-width: 500px) {
     .zodiac__item {
       padding: 0 10px; } }
 
 .zodiac__link {
-  overflow: hidden;
-  position: relative;
+  text-align: center;
   color: #fff;
-  min-width: 35px;
+  width: 35px;
   height: 35px;
   line-height: 35px;
   white-space: nowrap;
-  transition: all 1s ease-out 0.1s; }
-  .zodiac__link:hover, .zodiac__link:focus, .zodiac__link:active, .zodiac__link.active {
-    color: #fff;
-    text-decoration: none;
-    min-width: 100%; }
-    .zodiac__link:hover .zodiac__icon, .zodiac__link:focus .zodiac__icon, .zodiac__link:active .zodiac__icon, .zodiac__link.active .zodiac__icon {
-      margin-left: 15px;
-      margin-rigth: 15px; }
-    .zodiac__link:hover .zodiac__text, .zodiac__link:focus .zodiac__text, .zodiac__link:active .zodiac__text, .zodiac__link.active .zodiac__text {
-      opacity: 1;
-      right: 0;
-      width: 120px; }
+  transition: all 1s ease-out 0.1s;
+  margin: 0 12px; }
+  .zodiac__link:hover .zodiac__text, .zodiac__link:focus .zodiac__text, .zodiac__link:active .zodiac__text, .zodiac__link.active .zodiac__text {
+    opacity: 1; }
 
 .zodiac__icon {
-  display: block;
+  display: inline-block;
   height: 20px;
   width: 20px;
   margin-left: 0;
   margin-right: 0;
   transition: all 1s ease-in-out 0s;
-  line-height: 1;
-  float: left; }
+  line-height: 1; }
 
 .zodiac__text {
-  display: block;
+  opacity: 0;
+  display: inline-block;
   font-size: 21px;
   font-family: 'Bebas Neue', sans-serif;
   font-weight: normal;
   line-height: 1;
-  position: relative;
-  right: -100%;
-  opacity: 0;
-  width: 0;
-  transition: all 1s ease-in-out 0s; }
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 120%;
+  overflow-x: visible;
+  transition: all 0.2s ease-in-out 0s; }
 
 .btn-circle {
   display: block;
@@ -639,7 +627,7 @@ body {
   font-family: 'Proxima Nova', sans-serif;
   background-color: rgba(255, 255, 255, 0.7);
   background: linear-gradient(180deg, white 0%, #f2f2f2 100%);
-  padding: 90px 30px 30px;
+  padding: 90px 0;
   color: #333;
   text-align: center;
   position: relative;
@@ -651,8 +639,7 @@ body {
   margin-bottom: 90px; }
   @media (min-width: 500px) {
     .card {
-      margin-bottom: 30px;
-      zoom: 0.5; } }
+      margin-bottom: 10em; } }
   @media (min-width: 650px) {
     .card {
       zoom: 0.7; } }
@@ -699,7 +686,8 @@ body {
     font-weight: normal;
     font-size: 22px;
     line-height: 1.5;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    padding: 0 1em; }
   .card__link {
     background: #fff;
     font-weight: bold;
@@ -732,10 +720,11 @@ body {
 .created_by {
   font-family: 'Proxima Nova', sans-serif;
   color: #666;
+  background-color: black;
+  padding: 5em 0;
   font-size: 18px;
   text-align: center;
-  margin-top: 90px;
-  margin-bottom: 60px; }
+  margin-top: 0; }
 
 .sagittarius {
   border-color: #00A99D;
@@ -746,6 +735,8 @@ body {
   .sagittarius--reverse {
     color: #00A99D;
     border-color: #00A99D; }
+    .sagittarius--reverse .zodiac__text {
+      color: #00A99D; }
     .sagittarius--reverse:hover, .sagittarius--reverse:focus {
       background: transparent;
       border-color: #00A99D;
@@ -764,6 +755,8 @@ body {
   .capricorn--reverse {
     color: #29ABE2;
     border-color: #29ABE2; }
+    .capricorn--reverse .zodiac__text {
+      color: #29ABE2; }
     .capricorn--reverse:hover, .capricorn--reverse:focus {
       background: transparent;
       border-color: #29ABE2;
@@ -782,6 +775,8 @@ body {
   .aquarius--reverse {
     color: #0071BC;
     border-color: #0071BC; }
+    .aquarius--reverse .zodiac__text {
+      color: #0071BC; }
     .aquarius--reverse:hover, .aquarius--reverse:focus {
       background: transparent;
       border-color: #0071BC;
@@ -800,6 +795,8 @@ body {
   .scorpio--reverse {
     color: #662D91;
     border-color: #662D91; }
+    .scorpio--reverse .zodiac__text {
+      color: #662D91; }
     .scorpio--reverse:hover, .scorpio--reverse:focus {
       background: transparent;
       border-color: #662D91;
@@ -818,6 +815,8 @@ body {
   .gemini--reverse {
     color: #9E005D;
     border-color: #9E005D; }
+    .gemini--reverse .zodiac__text {
+      color: #9E005D; }
     .gemini--reverse:hover, .gemini--reverse:focus {
       background: transparent;
       border-color: #9E005D;
@@ -836,6 +835,8 @@ body {
   .pisces--reverse {
     color: #ED1E79;
     border-color: #ED1E79; }
+    .pisces--reverse .zodiac__text {
+      color: #ED1E79; }
     .pisces--reverse:hover, .pisces--reverse:focus {
       background: transparent;
       border-color: #ED1E79;
@@ -854,6 +855,8 @@ body {
   .aries--reverse {
     color: #ED1C24;
     border-color: #ED1C24; }
+    .aries--reverse .zodiac__text {
+      color: #ED1C24; }
     .aries--reverse:hover, .aries--reverse:focus {
       background: transparent;
       border-color: #ED1C24;
@@ -872,6 +875,8 @@ body {
   .virgo--reverse {
     color: #F7931E;
     border-color: #F7931E; }
+    .virgo--reverse .zodiac__text {
+      color: #F7931E; }
     .virgo--reverse:hover, .virgo--reverse:focus {
       background: transparent;
       border-color: #F7931E;
@@ -890,12 +895,14 @@ body {
   .leo--reverse {
     color: #D9E021;
     border-color: #D9E021; }
+    .leo--reverse .zodiac__text {
+      color: #D9E021; }
     .leo--reverse:hover, .leo--reverse:focus {
       background: transparent;
       border-color: #D9E021;
       color: #D9E021; }
     .leo--reverse:active, .leo--reverse.active {
-      background: #fff;
+      background: #D9E021;
       border-color: #D9E021;
       color: #fff; }
 
@@ -908,12 +915,14 @@ body {
   .taurus--reverse {
     color: #8CC63F;
     border-color: #8CC63F; }
+    .taurus--reverse .zodiac__text {
+      color: #8CC63F; }
     .taurus--reverse:hover, .taurus--reverse:focus {
       background: transparent;
       border-color: #8CC63F;
       color: #8CC63F; }
     .taurus--reverse:active, .taurus--reverse.active {
-      background: #fff;
+      background: #8CC63F;
       border-color: #8CC63F;
       color: #fff; }
 
@@ -926,12 +935,14 @@ body {
   .cancer--reverse {
     color: #39B54A;
     border-color: #39B54A; }
+    .cancer--reverse .zodiac__text {
+      color: #39B54A; }
     .cancer--reverse:hover, .cancer--reverse:focus {
       background: transparent;
       border-color: #39B54A;
       color: #39B54A; }
     .cancer--reverse:active, .cancer--reverse.active {
-      background: #fff;
+      background: #39B54A;
       border-color: #39B54A;
       color: #fff; }
 
@@ -944,12 +955,14 @@ body {
   .libra--reverse {
     color: #006837;
     border-color: #006837; }
+    .libra--reverse .zodiac__text {
+      color: #006837; }
     .libra--reverse:hover, .libra--reverse:focus {
       background: transparent;
       border-color: #006837;
       color: #006837; }
     .libra--reverse:active, .libra--reverse.active {
-      background: #fff;
+      background: #006837;
       border-color: #006837;
       color: #fff; }
 
@@ -968,12 +981,10 @@ body {
       height: 80px; }
     .quote:before {
       top: 0;
-      left: -100px;
-      background-image: url("../images/quote-open.svg"); }
+      left: -100px; }
     .quote:after {
       bottom: 0;
-      right: -100px;
-      background-image: url("../images/quote-close.svg"); } }
+      right: -100px; } }
   .quote__header {
     font-size: 32px;
     font-family: 'Bebas Neue', sans-serif;
@@ -995,17 +1006,28 @@ body {
       padding-left: 10px;
       padding-right: 10px; } }
   .article__header {
+    padding: 1em 0 0.5em 0;
     font-size: 32px;
     font-family: 'Bebas Neue', sans-serif;
     color: #333; }
   .article__text {
+    display: inline-block;
+    width: 70%;
+    text-align: left;
     font-family: 'Proxima Nova', sans-serif;
     font-size: 18px;
-    line-height: 1.5;
+    line-height: 1.8;
     color: #666;
     margin-top: 5px;
     margin-bottom: 5px; }
 
+.article--single {
+  opacity: 0;
+  margin-bottom: 8em;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s; }
 .article--single .article__header {
   margin-top: 20px;
   margin-bottom: 20px; }
@@ -1202,22 +1224,27 @@ body {
       color: #fff; }
 
 .person {
+  opacity: 0;
   position: relative;
   margin-bottom: 30px;
   max-width: 300px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s; }
   .person__name {
     position: absolute;
-    left: 25px;
-    bottom: 25px; }
+    width: 100%;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); }
   .person__firstname, .person__lastname {
     display: inline-block;
     font-family: 'Bebas Neue', sans-serif;
     font-size: 35px;
     font-weight: normal;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #fff;
+    color: white;
     padding: 12px;
     line-height: 0.8; }
   .person__firstname {
@@ -1241,7 +1268,7 @@ body {
     color: #fff;
     background-color: rgba(0, 0, 0, 0.8);
     padding: 25px;
-    text-align: center;
+    text-align: left;
     line-height: 1.5;
     opacity: 0;
     transition: opacity 1s ease-out; }
@@ -1257,5 +1284,436 @@ body {
       .person__link:hover .person__bio {
         display: block;
         opacity: 1; }
+
+.text {
+  opacity: 0;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s; }
+
+.show {
+  opacity: 1;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s; }
+
+footer .extra-padding {
+  padding-bottom: 0; }
+
+.container .extra-padding {
+  padding: 8em 0; }
+
+.container {
+  text-align: center; }
+
+@media screen and (max-width: 500px) {
+  .container {
+    width: 100%; }
+
+  .zodiac {
+    padding: 2em; }
+
+  .created_by {
+    margin-top: 0; }
+
+  .person {
+    max-width: 500px;
+    margin-bottom: 0; }
+
+  #famous .extra-padding {
+    padding-top: 0; }
+
+  #famous .container {
+    width: 100%; }
+
+  .background-wrapper.extra-padding {
+    padding-top: 0; }
+
+  .person__name {
+    position: relative;
+    background-color: black;
+    padding: 1em 0; }
+
+  .person__bio {
+    position: relative;
+    display: block;
+    opacity: 1;
+    background-color: black;
+    padding-bottom: 6em;
+    line-height: 2em;
+    padding-top: 0; }
+
+  .person__dob {
+    margin-top: 0;
+    margin-bottom: 20px; }
+
+  .card__icon {
+    display: none; }
+
+  .card__header {
+    display: none; }
+
+  .card {
+    background-color: rgba(255, 255, 255, 0);
+    background: none;
+    max-width: 500px;
+    box-shadow: none;
+    height: 3em;
+    margin-bottom: 0;
+    padding: 0; }
+
+  .card__link {
+    display: block;
+    font-size: 16px;
+    padding: 1em 0; } }
+@media screen and (max-width: 600px) and (min-width: 500px) {
+  .zodiac {
+    padding: 4em; } }
+@media screen and (max-width: 650px) {
+  .container .extra-padding {
+    width: 85%;
+    display: inline-block; }
+
+  .quote__text {
+    font-size: 16px; }
+
+  .card__header {
+    font-size: 16px;
+    margin-bottom: 60px; }
+
+  .article__text {
+    width: 85%;
+    font-size: 16px; } }
+@media screen and (max-width: 750px) and (min-width: 500px) {
+  ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0; }
+
+  .zodiac__icon {
+    display: none; }
+
+  .zodiac__text {
+    top: 7px;
+    opacity: 1; }
+
+  .btn-circle {
+    border-radius: 0;
+    width: 100%; }
+
+  .zodiac__link {
+    margin: 0; }
+
+  .zodiac__item {
+    width: 25%; } }
+@media screen and (max-width: 500px) {
+  .zodiac__icon {
+    display: none; }
+
+  .zodiac__text {
+    top: 17px;
+    opacity: 1; }
+
+  .btn-circle {
+    border-radius: 0;
+    width: 100%; }
+
+  .zodiac__link {
+    margin: 0; }
+
+  .zodiac__item {
+    width: 49%; }
+
+  .card__action {
+    position: static; }
+
+  .card--blue .card__link {
+    color: white;
+    background-color: #29ABE2; }
+
+  .card--yellow .card__link {
+    color: white;
+    background-color: #F7931E; }
+
+  .card--green .card__link {
+    color: white;
+    background-color: #39B54A; }
+
+  .card--orange .card__link {
+    color: white;
+    background-color: #f15a24; } }
+@media screen and (min-width: 750px) {
+  .zodiac__item {
+    margin-bottom: 3em; } }
+@media screen and (max-width: 750px) {
+  .sagittarius {
+    border-color: #00A99D;
+    color: #00A99D; }
+    .sagittarius:hover, .sagittarius:focus, .sagittarius:active, .sagittarius.active {
+      color: #fff;
+      background-color: #00A99D; }
+    .sagittarius--reverse {
+      color: #00A99D;
+      border-color: #00A99D; }
+      .sagittarius--reverse:hover, .sagittarius--reverse:focus {
+        background: transparent;
+        border-color: #00A99D;
+        color: #00A99D; }
+      .sagittarius--reverse:active, .sagittarius--reverse.active {
+        background: #00A99D;
+        border-color: #00A99D;
+        color: #00A99D; }
+        .sagittarius--reverse:active .zodiac__text, .sagittarius--reverse.active .zodiac__text {
+          color: white; }
+
+  .capricorn {
+    border-color: #29ABE2;
+    color: #29ABE2; }
+    .capricorn:hover, .capricorn:focus, .capricorn:active, .capricorn.active {
+      color: #fff;
+      background-color: #29ABE2; }
+    .capricorn--reverse {
+      color: #29ABE2;
+      border-color: #29ABE2; }
+      .capricorn--reverse .zodiac__text {
+        color: #29ABE2; }
+      .capricorn--reverse:hover, .capricorn--reverse:focus {
+        background: transparent;
+        border-color: #29ABE2;
+        color: #29ABE2; }
+      .capricorn--reverse:active, .capricorn--reverse.active {
+        background: #29ABE2;
+        border-color: #29ABE2;
+        color: #fff; }
+        .capricorn--reverse:active .zodiac__text, .capricorn--reverse.active .zodiac__text {
+          color: white; }
+
+  .aquarius {
+    border-color: #0071BC;
+    color: #0071BC; }
+    .aquarius:hover, .aquarius:focus, .aquarius:active, .aquarius.active {
+      color: #fff;
+      background-color: #0071BC; }
+    .aquarius--reverse {
+      color: #0071BC;
+      border-color: #0071BC; }
+      .aquarius--reverse .zodiac__text {
+        color: #0071BC; }
+      .aquarius--reverse:hover, .aquarius--reverse:focus {
+        background: transparent;
+        border-color: #0071BC;
+        color: #0071BC; }
+      .aquarius--reverse:active, .aquarius--reverse.active {
+        background: #0071BC;
+        border-color: #0071BC;
+        color: #fff; }
+        .aquarius--reverse:active .zodiac__text, .aquarius--reverse.active .zodiac__text {
+          color: white; }
+
+  .scorpio {
+    border-color: #662D91;
+    color: #662D91; }
+    .scorpio:hover, .scorpio:focus, .scorpio:active, .scorpio.active {
+      color: #fff;
+      background-color: #662D91; }
+    .scorpio--reverse {
+      color: #662D91;
+      border-color: #662D91; }
+      .scorpio--reverse .zodiac__text {
+        color: #662D91; }
+      .scorpio--reverse:hover, .scorpio--reverse:focus {
+        background: transparent;
+        border-color: #662D91;
+        color: #662D91; }
+      .scorpio--reverse:active, .scorpio--reverse.active {
+        background: #662D91;
+        border-color: #662D91;
+        color: #fff; }
+        .scorpio--reverse:active .zodiac__text, .scorpio--reverse.active .zodiac__text {
+          color: white; }
+
+  .gemini {
+    border-color: #9E005D;
+    color: #9E005D; }
+    .gemini:hover, .gemini:focus, .gemini:active, .gemini.active {
+      color: #fff;
+      background-color: #9E005D; }
+    .gemini--reverse {
+      color: #9E005D;
+      border-color: #9E005D; }
+      .gemini--reverse .zodiac__text {
+        color: #9E005D; }
+      .gemini--reverse:hover, .gemini--reverse:focus {
+        background: transparent;
+        border-color: #9E005D;
+        color: #9E005D; }
+      .gemini--reverse:active, .gemini--reverse.active {
+        background: #9E005D;
+        border-color: #9E005D;
+        color: #fff; }
+        .gemini--reverse:active .zodiac__text, .gemini--reverse.active .zodiac__text {
+          color: white; }
+
+  .pisces {
+    border-color: #ED1E79;
+    color: #ED1E79; }
+    .pisces:hover, .pisces:focus, .pisces:active, .pisces.active {
+      color: #fff;
+      background-color: #ED1E79; }
+    .pisces--reverse {
+      color: #ED1E79;
+      border-color: #ED1E79; }
+      .pisces--reverse .zodiac__text {
+        color: #ED1E79; }
+      .pisces--reverse:hover, .pisces--reverse:focus {
+        background: transparent;
+        border-color: #ED1E79;
+        color: #ED1E79; }
+      .pisces--reverse:active, .pisces--reverse.active {
+        background: #ED1E79;
+        border-color: #ED1E79;
+        color: #fff; }
+        .pisces--reverse:active .zodiac__text, .pisces--reverse.active .zodiac__text {
+          color: white; }
+
+  .aries {
+    border-color: #ED1C24;
+    color: #ED1C24; }
+    .aries:hover, .aries:focus, .aries:active, .aries.active {
+      color: #fff;
+      background-color: #ED1C24; }
+    .aries--reverse {
+      color: #ED1C24;
+      border-color: #ED1C24; }
+      .aries--reverse .zodiac__text {
+        color: #ED1C24; }
+      .aries--reverse:hover, .aries--reverse:focus {
+        background: transparent;
+        border-color: #ED1C24;
+        color: #ED1C24; }
+      .aries--reverse:active, .aries--reverse.active {
+        background: #ED1C24;
+        border-color: #ED1C24;
+        color: #fff; }
+        .aries--reverse:active .zodiac__text, .aries--reverse.active .zodiac__text {
+          color: white; }
+
+  .virgo {
+    border-color: #F7931E;
+    color: #F7931E; }
+    .virgo:hover, .virgo:focus, .virgo:active, .virgo.active {
+      color: #fff;
+      background-color: #F7931E; }
+    .virgo--reverse {
+      color: #F7931E;
+      border-color: #F7931E; }
+      .virgo--reverse .zodiac__text {
+        color: #F7931E; }
+      .virgo--reverse:hover, .virgo--reverse:focus {
+        background: transparent;
+        border-color: #F7931E;
+        color: #F7931E; }
+      .virgo--reverse:active, .virgo--reverse.active {
+        background: #F7931E;
+        border-color: #F7931E;
+        color: #fff; }
+        .virgo--reverse:active .zodiac__text, .virgo--reverse.active .zodiac__text {
+          color: white; }
+
+  .leo {
+    border-color: #D9E021;
+    color: #D9E021; }
+    .leo:hover, .leo:focus, .leo:active, .leo.active {
+      color: #fff;
+      background-color: #D9E021; }
+    .leo--reverse {
+      color: #D9E021;
+      border-color: #D9E021; }
+      .leo--reverse .zodiac__text {
+        color: #D9E021; }
+      .leo--reverse:hover, .leo--reverse:focus {
+        background: transparent;
+        border-color: #D9E021;
+        color: #D9E021; }
+      .leo--reverse:active, .leo--reverse.active {
+        background: #D9E021;
+        border-color: #D9E021;
+        color: #fff; }
+        .leo--reverse:active .zodiac__text, .leo--reverse.active .zodiac__text {
+          color: white; }
+
+  .taurus {
+    border-color: #8CC63F;
+    color: #8CC63F; }
+    .taurus:hover, .taurus:focus, .taurus:active, .taurus.active {
+      color: #fff;
+      background-color: #8CC63F; }
+    .taurus--reverse {
+      color: #8CC63F;
+      border-color: #8CC63F; }
+      .taurus--reverse .zodiac__text {
+        color: #8CC63F; }
+      .taurus--reverse:hover, .taurus--reverse:focus {
+        background: transparent;
+        border-color: #8CC63F;
+        color: #8CC63F; }
+      .taurus--reverse:active, .taurus--reverse.active {
+        background: #8CC63F;
+        border-color: #8CC63F;
+        color: #fff; }
+        .taurus--reverse:active .zodiac__text, .taurus--reverse.active .zodiac__text {
+          color: white; }
+
+  .cancer {
+    border-color: #39B54A;
+    color: #39B54A; }
+    .cancer:hover, .cancer:focus, .cancer:active, .cancer.active {
+      color: #fff;
+      background-color: #39B54A; }
+    .cancer--reverse {
+      color: #39B54A;
+      border-color: #39B54A; }
+      .cancer--reverse .zodiac__text {
+        color: #39B54A; }
+      .cancer--reverse:hover, .cancer--reverse:focus {
+        background: transparent;
+        border-color: #39B54A;
+        color: #39B54A; }
+      .cancer--reverse:active, .cancer--reverse.active {
+        background: #39B54A;
+        border-color: #39B54A;
+        color: #fff; }
+        .cancer--reverse:active .zodiac__text, .cancer--reverse.active .zodiac__text {
+          color: white; }
+
+  .libra {
+    border-color: #006837;
+    color: #006837; }
+    .libra:hover, .libra:focus, .libra:active, .libra.active {
+      color: #fff;
+      background-color: #006837; }
+    .libra--reverse {
+      color: #006837;
+      border-color: #006837; }
+      .libra--reverse .zodiac__text {
+        color: #006837; }
+      .libra--reverse:hover, .libra--reverse:focus {
+        background: transparent;
+        border-color: #006837;
+        color: #006837; }
+      .libra--reverse:active, .libra--reverse.active {
+        background: #006837;
+        border-color: #006837;
+        color: #fff; }
+        .libra--reverse:active .zodiac__text, .libra--reverse.active .zodiac__text {
+          color: white; } }
+.last_article {
+  padding-bottom: 5em; }
 
 /*# sourceMappingURL=main.css.map */
