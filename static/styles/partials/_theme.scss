@@ -378,7 +378,7 @@ body {
   &__header {
     color: #333;
     font-weight: normal;
-    font-size: 22px;
+    font-size: 1.2em;
     line-height: 1.5;
     margin-bottom: 30px;
       padding: 0 1em;
@@ -797,7 +797,7 @@ body {
 }
 .quote {
   position: relative;
-  max-width: 500px;
+  max-width: 60%;
   @include center-in-parent;
   @include respond-to('sm') {
     &:before,
@@ -1219,7 +1219,7 @@ footer .extra-padding{
 }
 
 .container .extra-padding{
-  padding: 8em 0;
+  padding: 5em 0 8em 0;
 }
 
 .container{
@@ -1369,6 +1369,7 @@ footer .extra-padding{
   }
 
   @media screen and (max-width: 500px) {
+     
  
 
     .zodiac__icon{
@@ -1433,6 +1434,9 @@ footer .extra-padding{
   }
 
   @media screen and (max-width:750px) {
+    .quote{
+      max-width: 80%;
+    }
     .sagittarius {
   border-color: $sagittarius;
   color: $sagittarius;
@@ -1832,9 +1836,20 @@ footer .extra-padding{
 }
   }
 
+    @media screen and (max-width: 500px) {
+     .quote{
+      max-width: 85%;
+    }
+  }
+
 
   .last_article{
     padding-bottom:5em;
   }
+
+  a:-webkit-any-link {
+  text-decoration: none;
+}
+
 
 
