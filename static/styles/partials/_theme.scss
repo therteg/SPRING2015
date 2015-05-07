@@ -296,7 +296,7 @@ body {
   border-radius: 25px;
   border: 1px solid #333;
   color: #333;
-  padding: 7px 7px;
+  padding: 5px 7px;
 }
 .btn-outline {
   padding: 10px 25px;
@@ -330,6 +330,7 @@ body {
   &--blue {
     color: $capricorn;
     .card__link {
+      border:1px solid;
       color: $capricorn;
       border-color: $capricorn;
       &:hover {
@@ -341,6 +342,7 @@ body {
   &--yellow {
     color: $virgo;
     .card__link {
+      border:1px solid;
       color: $virgo;
       border-color: $virgo;
       &:hover {
@@ -352,6 +354,7 @@ body {
   &--green {
     color: $cancer;
     .card__link {
+      border:1px solid;
       color: $cancer;
       border-color: $cancer;
       &:hover {
@@ -363,6 +366,7 @@ body {
   &--orange {
     color: $orange;
     .card__link {
+      border:1px solid;
       color: $orange;
       border-color: $orange;
       &:hover {
@@ -374,7 +378,7 @@ body {
   &__header {
     color: #333;
     font-weight: normal;
-    font-size: 22px;
+    font-size: 1.2em;
     line-height: 1.5;
     margin-bottom: 30px;
       padding: 0 1em;
@@ -793,7 +797,7 @@ body {
 }
 .quote {
   position: relative;
-  max-width: 500px;
+  max-width: 60%;
   @include center-in-parent;
   @include respond-to('sm') {
     &:before,
@@ -1215,7 +1219,7 @@ footer .extra-padding{
 }
 
 .container .extra-padding{
-  padding: 8em 0;
+  padding: 5em 0 8em 0;
 }
 
 .container{
@@ -1365,6 +1369,7 @@ footer .extra-padding{
   }
 
   @media screen and (max-width: 500px) {
+     
  
 
     .zodiac__icon{
@@ -1395,21 +1400,25 @@ footer .extra-padding{
     }
 
     .card--blue .card__link{
+      border:none;
       color:white;
       background-color: #29ABE2;
     }
 
     .card--yellow .card__link{
+      border:none;
       color:white;
       background-color: #F7931E;
     }
 
     .card--green .card__link{
+      border:none;
       color:white;
       background-color: #39B54A;    
     }
 
     .card--orange .card__link{
+      border:none;
       color:white;
       background-color: #f15a24;    
     }
@@ -1425,6 +1434,9 @@ footer .extra-padding{
   }
 
   @media screen and (max-width:750px) {
+    .quote{
+      max-width: 80%;
+    }
     .sagittarius {
   border-color: $sagittarius;
   color: $sagittarius;
@@ -1824,9 +1836,20 @@ footer .extra-padding{
 }
   }
 
+    @media screen and (max-width: 500px) {
+     .quote{
+      max-width: 85%;
+    }
+  }
+
 
   .last_article{
     padding-bottom:5em;
   }
+
+  a:-webkit-any-link {
+  text-decoration: none;
+}
+
 
 
