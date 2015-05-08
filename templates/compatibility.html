@@ -64,4 +64,20 @@
       <p class="created_by">Created by Ted, Lu, Zoe and Ash</p>
     </div>
   </footer>
+
+  <script>
+  $(document).ready(function() {
+  $(".article").hide();
+  $(".article-cancer").show();
+
+  $(".carousel__item").click(function() {
+
+    var classes = $(this).attr('class').split(' ')[1].substring(6);
+    console.log (classes);
+    $(".article").hide();
+    $(".article-"+classes).show();
+
+  });});
+
+  </script>
 {% end %}
