@@ -1,0 +1,119 @@
+{% extends base.html %}
+
+{% block body %}
+
+<body class="">
+  <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+  <div class="{% block bgimageclass %}{% end %} medium-padding">
+    <div class="container">
+      <nav class="zodiac">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-2 -2 504 504" id="menu" style="touch-action: none; -webkit-user-select: none;">
+          <g id="itemsContainer">
+            <a class="item" id="item-1" role="link" tabindex="0" xlink:href="/gemini" xlink:title="Gemini" transform="matrix(1,0,0,1,0,0)" data-svg-origin="250 250" style="">
+              <path fill="none" stroke="#111" d="M410,250 l90,0 A250,250 0 0,0 466.5063509461097,125.00000000000001 l-77.94228634059948,44.999999999999986 A160,160 0 0,1 410,250" class="sector"></path>
+              <use xlink:href="{{static_url("images/sprite.svg")}}#icon-gemini" width="50" height="50" x="420" y="175" transform="rotate(0 435 198)" class="icon-wrap"></use>
+            </a>
+            <a class="item" id="item-2" role="link" tabindex="0" xlink:href="/taurus" xlink:title="Taurus" transform="matrix(0.86602,-0.49999,0.49999,0.86602,-91.50635094610965,158.4936490538903)" data-svg-origin="250 250" style="">
+              <path fill="none" stroke="#111" d="M410,250 l90,0 A250,250 0 0,0 466.5063509461097,125.00000000000001 l-77.94228634059948,44.999999999999986 A160,160 0 0,1 410,250" class="sector"></path>
+              <use xlink:href="{{static_url("images/sprite.svg")}}#icon-taurus" width="50" height="50" x="407.61700439453125" y="160.2185516357422" transform="rotate(30 435 198)" class="icon-wrap"></use>
+            </a>
+            <a class="item" id="item-3" role="link" tabindex="0" xlink:href="/aries" xlink:title="Aries" transform="matrix(0.5,-0.86602,0.86602,0.5,-91.5063509461097,341.5063509461096)" data-svg-origin="250 250" style="">
+              <path fill="none" stroke="#111" d="M410,250 l90,0 A250,250 0 0,0 466.5063509461097,125.00000000000001 l-77.94228634059948,44.999999999999986 A160,160 0 0,1 410,250" class="sector"></path>
+              <use xlink:href="{{static_url("images/sprite.svg")}}#icon-aries" width="50" height="50" x="407.61700439453125" y="160.2185516357422" transform="rotate(60 435 198)" class="icon-wrap"></use>
+            </a>
+            <a class="item" id="item-4" role="link" tabindex="0" xlink:href="/pisces" xlink:title="Pisces" transform="matrix(0,-1,1,0,0,500)" data-svg-origin="250 250" style="">
+              <path fill="none" stroke="#111" d="M410,250 l90,0 A250,250 0 0,0 466.5063509461097,125.00000000000001 l-77.94228634059948,44.999999999999986 A160,160 0 0,1 410,250" class="sector"></path>
+              <use xlink:href="{{static_url("images/sprite.svg")}}#icon-pisces" width="50" height="50" x="407.61700439453125" y="160.2185516357422" transform="rotate(90 435 198)" class="icon-wrap"></use>
+            </a>
+            <a class="item" id="item-5" role="link" tabindex="0" xlink:href="/aquarius" xlink:title="Aquarius" transform="matrix(-0.49999,-0.86602,0.86602,-0.49999,158.49364905389024,591.5063509461097)" data-svg-origin="250 250" style="">
+              <path fill="none" stroke="#111" d="M410,250 l90,0 A250,250 0 0,0 466.5063509461097,125.00000000000001 l-77.94228634059948,44.999999999999986 A160,160 0 0,1 410,250" class="sector"></path>
+              <use xlink:href="{{static_url("images/sprite.svg")}}#icon-aquarius" width="50" height="50" x="407.61700439453125" y="160.2185516357422" transform="rotate(120 435 198)" class="icon-wrap"></use>
+            </a>
+            <a class="item" id="item-6" role="link" tabindex="0" xlink:href="/capricorn" xlink:title="Capricorn" transform="matrix(-0.86602,-0.49999,0.49999,-0.86602,341.5063509461097,591.5063509461097)" data-svg-origin="250 250" style="">
+              <path fill="none" stroke="#111" d="M410,250 l90,0 A250,250 0 0,0 466.5063509461097,125.00000000000001 l-77.94228634059948,44.999999999999986 A160,160 0 0,1 410,250" class="sector"></path>
+              <use xlink:href="{{static_url("images/sprite.svg")}}#icon-capricorn" width="50" height="50" x="407.61700439453125" y="160.2185516357422" transform="rotate(150 435 188)" class="icon-wrap"></use>
+            </a>
+            <a class="item" id="item-7" role="link" tabindex="0" xlink:href="/sagittarius" xlink:title="Sagittarius" transform="matrix(-1,0,0,-1,500,500)" data-svg-origin="250 250" style="">
+              <path fill="none" stroke="#111" d="M410,250 l90,0 A250,250 0 0,0 466.5063509461097,125.00000000000001 l-77.94228634059948,44.999999999999986 A160,160 0 0,1 410,250" class="sector"></path>
+              <use xlink:href="{{static_url("images/sprite.svg")}}#icon-sagittarius" width="50" height="50" x="407.61700439453125" y="160.2185516357422" transform="rotate(180 440 190)" class="icon-wrap"></use>
+            </a>
+            <a class="item" id="item-8" role="link" tabindex="0" xlink:href="/scorpio" xlink:title="Scorpio" transform="matrix(-0.86602,0.5,-0.5,-0.86602,591.5063509461097,341.5063509461096)" data-svg-origin="250 250" style="">
+              <path fill="none" stroke="#111" d="M410,250 l90,0 A250,250 0 0,0 466.5063509461097,125.00000000000001 l-77.94228634059948,44.999999999999986 A160,160 0 0,1 410,250" class="sector"></path>
+              <use xlink:href="{{static_url("images/sprite.svg")}}#icon-scorpio" width="50" height="50" x="407.61700439453125" y="160.2185516357422" transform="rotate(210 440 188)" class="icon-wrap"></use>
+            </a>
+            <a class="item" id="item-9" role="link" tabindex="0" xlink:href="/libra" xlink:title="Libra" transform="matrix(-0.5,0.86602,-0.86602,-0.5,591.5063509461097,158.4936490538905)" data-svg-origin="250 250" style="">
+              <path fill="none" stroke="#111" d="M410,250 l90,0 A250,250 0 0,0 466.5063509461097,125.00000000000001 l-77.94228634059948,44.999999999999986 A160,160 0 0,1 410,250" class="sector"></path>
+              <use xlink:href="{{static_url("images/sprite.svg")}}#icon-libra" width="50" height="50" x="407.61700439453125" y="160.2185516357422" transform="rotate(240 445 185)" class="icon-wrap"></use>
+            </a>
+            <a class="item" id="item-10" role="link" tabindex="0" xlink:href="/virgo" xlink:title="Virgo" transform="matrix(0,1,-1,0,500.00000000000006,0)" data-svg-origin="250 250" style="">
+              <path fill="none" stroke="#111" d="M410,250 l90,0 A250,250 0 0,0 466.5063509461097,125.00000000000001 l-77.94228634059948,44.999999999999986 A160,160 0 0,1 410,250" class="sector"></path>
+              <use xlink:href="{{static_url("images/sprite.svg")}}#icon-virgo" width="50" height="50" x="407.61700439453125" y="160.2185516357422" transform="rotate(270 445 185)" class="icon-wrap"></use>
+            </a>
+            <a class="item" id="item-11" role="link" tabindex="0" xlink:href="/leo" xlink:title="Leo" transform="matrix(0.5,0.86602,-0.86602,0.5,341.5063509461096,-91.5063509461097)" data-svg-origin="250 250" style="">
+              <path fill="none" stroke="#111" d="M410,250 l90,0 A250,250 0 0,0 466.5063509461097,125.00000000000001 l-77.94228634059948,44.999999999999986 A160,160 0 0,1 410,250" class="sector"></path>
+              <use xlink:href="{{static_url("images/sprite.svg")}}#icon-leo" width="50" height="50" x="407.61700439453125" y="160.2185516357422" transform="rotate(300 450 180)" class="icon-wrap"></use>
+            </a>
+            <a class="item" id="item-12" role="link" tabindex="0" xlink:href="/cancer" xlink:title="Cancer" transform="matrix(0.86602,0.5,-0.5,0.86602,158.49364905389052,-91.5063509461097)" data-svg-origin="250 250" style="">
+              <path fill="none" stroke="#111" d="M410,250 l90,0 A250,250 0 0,0 466.5063509461097,125.00000000000001 l-77.94228634059948,44.999999999999986 A160,160 0 0,1 410,250" class="sector"></path>
+              <use xlink:href="{{static_url("images/sprite.svg")}}#icon-cancer" width="50" height="50" x="407.61700439453125" y="160.2185516357422" transform="rotate(330 450 175)" class="icon-wrap"></use>
+            </a>
+          </g>
+          <g id="trigger" class="trigger menu-trigger" role="form">
+				{% block mainimage %}{% end %}
+          </g>
+        </svg>
+      </nav>
+      <h2 class="selected_sign">{% block maintitle %}{% end %}</h2>
+    </div>
+  </div>
+
+	{% block navbar %}{% end %}
+
+    <div class="extra-padding">
+      <div class="quote">
+        <h2 class="quote__header">today’s horoscope</h2>
+        <p class="quote__text">{% block horoscope %}{% end %}</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="background-wrapper extra-padding">
+    <div class="container container-lg">
+      <div class="row row-lg">
+        <div class="col-sm-4 col-xs-12">
+          <div class="card card--blue">
+            <div class="card__icon lightbulb"></div>
+            <h2 class="card__header">{% block explorecard %}{% end %} </h2>
+            <div class="card__action">
+              <a href="/{% block zodiac %}{% end %}/explore" class="btn-outline card__link">EXPLORE MORE</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-xs-12">
+          <div class="card card--yellow">
+            <div class="card__icon star"></div>
+            <h2 class="card__header">{% block famouscard %}{% end %}</h2>
+            <div class="card__action">
+              <a href="/{% block zodiac %}{% end %}/famous" class="btn-outline card__link">VIEW FAMOUS {% block famouscardbutton %}{% end %}</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-xs-12">
+          <div class="card card--green">
+            <div class="card__icon flash"></div>
+            <h2 class="card__header">{% block compatibilitycard %}{% end %}</h2>
+            <div class="card__action">
+              <a href="/{% block zodiac %}{% end %}/compatibility" class="btn-outline card__link">DISCOVER COMPATIBILITY</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="created_by">Created by Ted, Lu, Zoe and Ash</p>
+    </div>
+  </footer>
+
+
+{% end %}

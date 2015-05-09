@@ -1,0 +1,1134 @@
+/* @import url(http://fonts.googleapis.com/css?family=Roboto); */
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+.small-padding {
+  padding: 10px 0;
+}
+.medium-padding {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.extra-padding {
+  padding-top: 40px;
+  padding-bottom: 100px;
+}
+.no-margin {
+  margin: 0;
+}
+@include respond-to('lg') {
+  .container-lg {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .row-lg {
+    margin-left: -30px;
+    margin-right: -30px;
+    > div[class*='col-'] {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+  .container-xlg {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .row-xlg {
+    margin-left: -40px;
+    margin-right: -40px;
+    > div[class*='col-'] {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 649px) {
+	.col-sm-1:nth-child(12n+1),
+	.col-sm-2:nth-child(6n+1),
+	.col-sm-3:nth-child(4n+1),
+	.col-sm-4:nth-child(3n+1),
+	.col-sm-6:nth-child(2n+1) {
+		clear: left;
+	}
+}
+
+@media screen and (min-width: 650px) and (max-width: 999px) {
+	.col-md-1:nth-child(12n+1),
+	.col-md-2:nth-child(6n+1),
+	.col-md-3:nth-child(4n+1),
+	.col-md-4:nth-child(3n+1),
+	.col-md-6:nth-child(2n+1) {
+		clear: left;
+	}
+}
+@media screen and (min-width: 1000px) and (max-width: 1199px) {
+	.col-lg-1:nth-child(12n+1),
+	.col-lg-2:nth-child(6n+1),
+	.col-lg-3:nth-child(4n+1),
+	.col-lg-4:nth-child(3n+1),
+	.col-lg-6:nth-child(2n+1) {
+		clear: left;
+	}
+}
+@media screen and (min-width: 1200px) {
+	.col-xl-1:nth-child(12n+1),
+	.col-xl-2:nth-child(6n+1),
+	.col-xl-3:nth-child(4n+1),
+	.col-xl-4:nth-child(3n+1),
+	.col-xl-6:nth-child(2n+1) {
+		clear: left;
+	}
+}
+.text-center {
+  text-align: center;
+}
+.text-justify {
+  text-align: justify;
+}
+@include respond-to('sm') {
+  .col-sm-offset-3 {
+    margin-left: 25%;
+  }
+}
+#menu {
+  display: block;
+  margin: 0 auto;
+  /*overflow: visible;*/
+  /* uncomment this if you are using bouncing animations*/
+  a {
+    cursor: pointer;
+    /* SVG &lt;a&gt; elements don't get this by default, so you need to explicitly set it */
+    outline: none;
+  }
+  /* You can change these default styles any way you want */
+  .item .sector {
+    transition: all 0.3s linear;
+    fill: rgba(0, 0, 0, 0);
+    stroke: #000;
+    stroke-width: 2px;
+    stroke-opacity: 0.2;
+  }
+  .item:hover .sector,
+  .item:focus .sector {
+    fill: rgba(0, 0, 0, 0.2);
+  }
+  .icon-wrap {
+    color: #fff;
+  }
+  .menu-trigger {
+    fill: #ea2a55;
+    pointer-events: auto;
+    /* KEEP THIS to make sure it stays clickable even when SVG's pointer events is disabled */
+  }
+  .menu-trigger:hover,
+  .menu-trigger:focus {
+    cursor: pointer;
+  }
+  symbol {
+    overflow: visible;
+    /* KEEP THIS so that text will not get cut off it it is wider than the icon width */
+  }
+}
+.as-table {
+  display: table;
+  width: 100%;
+}
+.as-table-cell {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.no-scroll {
+  position: fixed;
+  width: 100%;
+  overflow-y: scroll;
+}
+.background-wrapper {
+  background: url("../images/background-overlay.jpg") no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+  transition: background-image 0.3s ease-in-out;
+  &.disable-overlay {
+    background-image: url("../images/background.jpg");
+  }
+  &.full-height {
+    height: 100%;
+  }
+  &.extra-padding {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+	&.medium-padding {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+}
+.zodiac {
+  @include center-in-parent;
+  max-width: 500px;
+  max-height: 500px;
+}
+.select-sign {
+  h2 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  form {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 8px;
+    border-radius: 7px;
+    border: 1px solid rgba(153, 153, 153, 0.2);
+  }
+}
+.form-group {
+  display: inline-block;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #fff;
+  border-radius: 7px;
+  box-shadow: none;
+  outline: none;
+  box-sizing: border-box;
+  padding: 6px 12px;
+  height: 44px;
+  font-size: 20px;
+  color: #333;
+}
+.selected_sign {
+  font-family: 'Bebas Neue';
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 89px;
+  margin-top: 20px;
+  text-align: center;
+}
+.zodiac__list {
+  margin-left: -5px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  text-align: center;
+	white-space: nowrap;
+	overflow-y: auto;
+}
+.zodiac__item {
+  display: inline-block;
+  padding: 10px;
+  margin-bottom: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  @include respond-to('sm') {
+    padding: 0 10px;
+  }
+}
+.zodiac__link {
+	overflow: hidden;
+  position: relative;
+  color: #fff;
+  min-width: 35px;
+  height: 35px;
+	line-height: 35px;
+	white-space: nowrap;
+  transition: all 1s ease-out 0.1s;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    color: #fff;
+    text-decoration: none;
+		min-width: 100%;
+		.zodiac__icon {
+			margin-left: 15px;
+			margin-rigth: 15px;
+		}
+    .zodiac__text {
+      opacity: 1;
+			right: 0;
+			width: 120px;
+    }
+  }
+}
+.zodiac__icon {
+	display: block;
+  height: 20px;
+  width: 20px;
+	margin-left: 0;
+	margin-right: 0;
+  transition: all 1s ease-in-out 0s;
+	line-height: 1;
+	float: left;
+}
+.zodiac__text {
+  display: block;
+  font-size: 21px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: normal;
+  line-height: 1;
+	position: relative;
+	right: -100%;
+  opacity: 0;
+	width: 0;
+  transition: all 1s ease-in-out 0s;
+}
+.btn-circle {
+  display: block;
+  border-radius: 25px;
+  border: 1px solid #333;
+  color: #333;
+  padding: 7px 7px;
+}
+.btn-outline {
+  border: 1px solid #333;
+  border-radius: 23px;
+  padding: 10px 25px;
+}
+.card {
+  font-family: 'Proxima Nova', sans-serif;
+  background-color: #f2f2f2;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(242, 242, 242, 1) 100%);
+  padding: 90px 30px 30px;
+  border-radius: 7px;
+  color: #333;
+  text-align: center;
+  position: relative;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
+  height: 300px;
+	max-width: 340px;
+	margin-left: auto;
+	margin-right: auto;
+  margin-bottom: 90px;
+  @include respond-to('sm') {
+    margin-bottom: 30px;
+		zoom: 0.5;
+  }
+	@include respond-to('md') {
+		zoom: 0.7;
+	}
+	@include respond-to('lg') {
+		zoom: 0.9;
+	}
+	@include respond-to('xl') {
+    zoom: 1;
+  }
+  &--blue {
+    color: $capricorn;
+    .card__link {
+      color: $capricorn;
+      border-color: $capricorn;
+      &:hover {
+        color: darken($capricorn, 15%);
+        border-color: darken($capricorn, 15%);
+      }
+    }
+  }
+  &--yellow {
+    color: $virgo;
+    .card__link {
+      color: $virgo;
+      border-color: $virgo;
+      &:hover {
+        color: darken($virgo, 15%);
+        border-color: darken($virgo, 15%);
+      }
+    }
+  }
+  &--green {
+    color: $cancer;
+    .card__link {
+      color: $cancer;
+      border-color: $cancer;
+      &:hover {
+        color: darken($cancer, 15%);
+        border-color: darken($cancer, 15%);
+      }
+    }
+  }
+  &--orange {
+    color: $orange;
+    .card__link {
+      color: $orange;
+      border-color: $orange;
+      &:hover {
+        color: darken($orange, 15%);
+        border-color: darken($orange, 15%);
+      }
+    }
+  }
+  &__header {
+    color: #333;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+  &__link {
+    background: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    display: inline-block;
+    text-transform: uppercase;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  &__icon {
+    position: absolute;
+    top: calc(-110px / 2);
+    left: calc(50% - 110px / 2);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 110px;
+    height: 110px;
+    &.lightbulb {
+      background-image: url("../images/lightbulb.svg");
+    }
+    &.star {
+      background-image: url("../images/star.svg");
+    }
+    &.flash {
+      background-image: url("../images/flash.svg");
+    }
+    &.planet {
+      background-image: url("../images/planet.svg");
+    }
+  }
+	&__action {
+		position: absolute;
+		bottom: 30px;
+		left: 30px;
+		right: 30px;
+	}
+}
+.created_by {
+  font-family: 'Proxima Nova', sans-serif;
+  color: #666;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 90px;
+  margin-bottom: 60px;
+}
+.sagittarius {
+  border-color: $sagittarius;
+  color: $sagittarius;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    color: #fff;
+    background-color: $sagittarius;
+  }
+  &--reverse {
+    color: $sagittarius;
+    border-color: $sagittarius;
+    &:hover,
+    &:focus {
+      background: transparent;
+      border-color: $sagittarius;
+      color: $sagittarius;
+    }
+    &:active,
+    &.active {
+      background: $sagittarius;
+      border-color: $sagittarius;
+      color: #fff;
+    }
+  }
+}
+.capricorn {
+  border-color: $capricorn;
+  color: $capricorn;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    color: #fff;
+    background-color: $capricorn;
+  }
+  &--reverse {
+    color: $capricorn;
+    border-color: $capricorn;
+    &:hover,
+    &:focus {
+      background: transparent;
+      border-color: $capricorn;
+      color: $capricorn;
+    }
+    &:active,
+    &.active {
+      background: $capricorn;
+      border-color: $capricorn;
+      color: #fff;
+    }
+  }
+}
+.aquarius {
+  border-color: $aquarius;
+  color: $aquarius;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    color: #fff;
+    background-color: $aquarius;
+  }
+  &--reverse {
+    color: $aquarius;
+    border-color: $aquarius;
+    &:hover,
+    &:focus {
+      background: transparent;
+      border-color: $aquarius;
+      color: $aquarius;
+    }
+    &:active,
+    &.active {
+      background: $aquarius;
+      border-color: $aquarius;
+      color: #fff;
+    }
+  }
+}
+.scorpio {
+  border-color: $scorpio;
+  color: $scorpio;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    color: #fff;
+    background-color: $scorpio;
+  }
+  &--reverse {
+    color: $scorpio;
+    border-color: $scorpio;
+    &:hover,
+    &:focus {
+      background: transparent;
+      border-color: $scorpio;
+      color: $scorpio;
+    }
+    &:active,
+    &.active {
+      background: $scorpio;
+      border-color: $scorpio;
+      color: #fff;
+    }
+  }
+}
+.gemini {
+  border-color: $gemini;
+  color: $gemini;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    color: #fff;
+    background-color: $gemini;
+  }
+  &--reverse {
+    color: $gemini;
+    border-color: $gemini;
+    &:hover,
+    &:focus {
+      background: transparent;
+      border-color: $gemini;
+      color: $gemini;
+    }
+    &:active,
+    &.active {
+      background: $gemini;
+      border-color: $gemini;
+      color: #fff;
+    }
+  }
+}
+.pisces {
+  border-color: $pisces;
+  color: $pisces;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    color: #fff;
+    background-color: $pisces;
+  }
+  &--reverse {
+    color: $pisces;
+    border-color: $pisces;
+    &:hover,
+    &:focus {
+      background: transparent;
+      border-color: $pisces;
+      color: $pisces;
+    }
+    &:active,
+    &.active {
+      background: $pisces;
+      border-color: $pisces;
+      color: #fff;
+    }
+  }
+}
+.aries {
+  border-color: $aries;
+  color: $aries;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    color: #fff;
+    background-color: $aries;
+  }
+  &--reverse {
+    color: $aries;
+    border-color: $aries;
+    &:hover,
+    &:focus {
+      background: transparent;
+      border-color: $aries;
+      color: $aries;
+    }
+    &:active,
+    &.active {
+      background: $aries;
+      border-color: $aries;
+      color: #fff;
+    }
+  }
+}
+.virgo {
+  border-color: $virgo;
+  color: $virgo;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    color: #fff;
+    background-color: $virgo;
+  }
+  &--reverse {
+    color: $virgo;
+    border-color: $virgo;
+    &:hover,
+    &:focus {
+      background: transparent;
+      border-color: $virgo;
+      color: $virgo;
+    }
+    &:active,
+    &.active {
+      background: $virgo;
+      border-color: $virgo;
+      color: #fff;
+    }
+  }
+}
+.leo {
+  border-color: $leo;
+  color: $leo;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    color: #fff;
+    background-color: $leo;
+  }
+  &--reverse {
+    color: $leo;
+    border-color: $leo;
+    &:hover,
+    &:focus {
+      background: transparent;
+      border-color: $leo;
+      color: $leo;
+    }
+    &:active,
+    &.active {
+      background: #fff;
+      border-color: $leo;
+      color: #fff;
+    }
+  }
+}
+.taurus {
+  border-color: $taurus;
+  color: $taurus;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    color: #fff;
+    background-color: $taurus;
+  }
+  &--reverse {
+    color: $taurus;
+    border-color: $taurus;
+    &:hover,
+    &:focus {
+      background: transparent;
+      border-color: $taurus;
+      color: $taurus;
+    }
+    &:active,
+    &.active {
+      background: #fff;
+      border-color: $taurus;
+      color: #fff;
+    }
+  }
+}
+.cancer {
+  border-color: $cancer;
+  color: $cancer;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    color: #fff;
+    background-color: $cancer;
+  }
+  &--reverse {
+    color: $cancer;
+    border-color: $cancer;
+    &:hover,
+    &:focus {
+      background: transparent;
+      border-color: $cancer;
+      color: $cancer;
+    }
+    &:active,
+    &.active {
+      background: #fff;
+      border-color: $cancer;
+      color: #fff;
+    }
+  }
+}
+.libra {
+  border-color: $libra;
+  color: $libra;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    color: #fff;
+    background-color: $libra;
+  }
+  &--reverse {
+    color: $libra;
+    border-color: $libra;
+    &:hover,
+    &:focus {
+      background: transparent;
+      border-color: $libra;
+      color: $libra;
+    }
+    &:active,
+    &.active {
+      background: #fff;
+      border-color: $libra;
+      color: #fff;
+    }
+  }
+}
+.quote {
+  position: relative;
+  max-width: 500px;
+  @include center-in-parent;
+  @include respond-to('sm') {
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      background-position: center center;
+      background-repeat: no-repeat;
+      width: 80px;
+      height: 80px;
+    }
+    &:before {
+      top: 0;
+      left: -100px;
+      background-image: url("../images/quote-open.svg");
+    }
+    &:after {
+      bottom: 0;
+      right: -100px;
+      background-image: url("../images/quote-close.svg");
+    }
+  }
+  &__header {
+    font-size: 32px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: bold;
+    color: #333;
+  }
+  &__text {
+    font-family: 'Proxima Nova', sans-serif;
+    color: #666;
+    font-size: 18px;
+    line-height: 29px;
+    text-align: justify;
+  }
+}
+.article {
+  margin-bottom: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
+	@include respond-to('md') {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+  &__header {
+    font-size: 32px;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #333;
+  }
+  &__text {
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #666;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}
+.article {
+  &--single &__header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  &--single &__text {
+    margin-bottom: 20px;
+  }
+}
+.tabs {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  @include clearfix;
+  @include respond-to('sm') {
+    margin-left: -15px;
+  }
+  &__item {
+    display: inline-block;
+    width: 33.3%;
+    float: left;
+    text-align: center;
+    @include respond-to('sm') {
+      text-align: left;
+      display: inline-block;
+      padding-left: 15px;
+      padding-right: 15px;
+      float: none;
+      width: auto;
+    }
+  }
+  &__link {
+    display: block;
+    position: relative;
+    font-family: 'Proxima Nova', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 25px 0;
+    opacity: 0.7;
+    transition: all 0.3s linear;
+    white-space: nowrap;
+    letter-spacing: -0.5px;
+    @include respond-to('sm') {
+      letter-spacing: normal;
+      font-size: 14px;
+      white-space: normal;
+    }
+    &:hover,
+    &:focus,
+    &:active,
+    &--active {
+      font-weight: bold;
+      opacity: 1;
+      text-decoration: none;
+    }
+    &:after {
+      display: none;
+      content: "";
+      position: absolute;
+      bottom: -3px;
+      left: calc(50% - 6px);
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 10px 12px 10px;
+      border-color: transparent transparent #fff transparent;
+    }
+    &--active {
+      &:after {
+        display: block;
+      }
+    }
+  }
+}
+.carousel {
+  background-color: #fff;
+  border-bottom: 1px solid #f2f2f2;
+  padding: 20px 0;
+  @include respond-to('sm') {
+    padding: 0;
+  }
+  &__item {
+    position: relative;
+    max-width: 190px;
+    max-height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__icon {
+    &--badge {
+      position: absolute;
+      top: 30px;
+      right: 8px;
+    }
+  }
+}
+.card--sagittarius {
+  color: #f2f2f2;
+  .carousel__icon {
+    color: $sagittarius;
+  }
+  &:hover,
+  &.active {
+    color: $sagittarius;
+    .carousel__icon {
+      color: #fff;
+    }
+  }
+}
+.card--capricorn {
+  color: #f2f2f2;
+  .carousel__icon {
+    color: $capricorn;
+  }
+  &:hover,
+  &.active {
+    color: $capricorn;
+    .carousel__icon {
+      color: #fff;
+    }
+  }
+}
+.card--aquarius {
+  color: #f2f2f2;
+  .carousel__icon {
+    color: $aquarius;
+  }
+  &:hover,
+  &.active {
+    color: $aquarius;
+    .carousel__icon {
+      color: #fff;
+    }
+  }
+}
+.card--scorpio {
+  color: #f2f2f2;
+  .carousel__icon {
+    color: $scorpio;
+  }
+  &:hover,
+  &.active {
+    color: $scorpio;
+    .carousel__icon {
+      color: #fff;
+    }
+  }
+}
+.card--gemini {
+  color: #f2f2f2;
+  .carousel__icon {
+    color: $gemini;
+  }
+  &:hover,
+  &.active {
+    color: $gemini;
+    .carousel__icon {
+      color: #fff;
+    }
+  }
+}
+.card--pisces {
+  color: #f2f2f2;
+  .carousel__icon {
+    color: $pisces;
+  }
+  &:hover,
+  &.active {
+    color: $pisces;
+    .carousel__icon {
+      color: #fff;
+    }
+  }
+}
+.card--aries {
+  color: #f2f2f2;
+  .carousel__icon {
+    color: $aries;
+  }
+  &:hover,
+  &.active {
+    color: $aries;
+    .carousel__icon {
+      color: #fff;
+    }
+  }
+}
+.card--virgo {
+  color: #f2f2f2;
+  .carousel__icon {
+    color: $virgo;
+  }
+  &:hover,
+  &.active {
+    color: $virgo;
+    .carousel__icon {
+      color: #fff;
+    }
+  }
+}
+.card--leo {
+  color: #f2f2f2;
+  .carousel__icon {
+    color: $leo;
+  }
+  &:hover,
+  &.active {
+    color: $leo;
+    .carousel__icon {
+      color: #fff;
+    }
+  }
+}
+.card--taurus {
+  color: #f2f2f2;
+  .carousel__icon {
+    color: $taurus;
+  }
+  &:hover,
+  &.active {
+    color: $taurus;
+    .carousel__icon {
+      color: #fff;
+    }
+  }
+}
+.card--cancer {
+  color: #f2f2f2;
+  .carousel__icon {
+    color: $cancer;
+  }
+  &:hover,
+  &.active {
+    color: $cancer;
+    .carousel__icon {
+      color: #fff;
+    }
+  }
+}
+.card--libra {
+  color: #f2f2f2;
+  .carousel__icon {
+    color: $libra;
+  }
+  &:hover,
+  &.active {
+    color: $libra;
+    .carousel__icon {
+      color: #fff;
+    }
+  }
+}
+.person {
+  position: relative;
+  margin-bottom: 30px;
+	max-width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+  &__name {
+    position: absolute;
+    left: 25px;
+    bottom: 25px;
+  }
+  &__firstname,
+  &__lastname {
+    display: inline-block;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 35px;
+    font-weight: normal;
+    background-color: transparentize(#000, 0.3);
+    color: #fff;
+    padding: 12px;
+    line-height: 0.8;
+  }
+  &__firstname {
+    padding-bottom: 3px;
+  }
+  &__lastname {
+    padding-top: 3px;
+  }
+  &__img {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+  }
+  &__bio {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-family: 'Proxima Nova', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+    background-color: transparentize(#000, 0.2);
+    padding: 25px;
+    text-align: center;
+    line-height: 1.5;
+    opacity: 0;
+    transition: opacity 1s ease-out;
+  }
+  &__dob {
+    font-style: italic;
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+  &__link {
+    transform: scale(1);
+    transition: all 0.3s ease-out;
+    &:hover {
+      transform: scale(1.1);
+      .person__bio {
+        display: block;
+        opacity: 1;
+      }
+    }
+  }
+}

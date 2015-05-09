@@ -1,0 +1,85 @@
+{% extends base.html %}
+
+{% block body %}
+
+<body>
+  <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+  {% block navbar %}{% end %}
+
+  <div class="background-wrapper">
+    <div class="container" style="max-width: 1000px;">
+      <ul class="tabs">
+        <li class="tabs__item"><a href="/{% block zodiac %}{% end %}/explore" class="tabs__link tabs__link--active">Overview</a></li>
+        <li class="tabs__item"><a href="/{% block zodiac %}{% end %}/compatibility" class="tabs__link">Compatibility</a></li>
+        <li class="tabs__item"><a href="/{% block zodiac %}{% end %}/famous"  class="tabs__link">Famous {% block menuzodiacname %}{% end %}</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container container-xlg extra-padding" style="max-width: 1000px;">
+    <div class="row row-xlg">
+      <div class="col-md-6 col-sm-12 col-xs-12">
+        <article class="article">
+          <h2 class="article__header"><svg width="24" height="24"><use xlink:href="{{static_url("images/sprite.svg")}}#icon-exclamation-circle" /></svg> about {% block aboutname %}{% end %}</h2>
+          <p class="article__text">{% block about %}{% end %}</p>
+        </article>
+
+        <article class="article">
+          <h2 class="article__header"><svg width="24" height="24"><use xlink:href="{{static_url("images/sprite.svg")}}#icon-thumbs-up" /></svg> positive traits</h2>
+          <p class="article__text">{% block positivetraits %}{% end %}</p>
+        </article>
+      </div>
+      <div class="col-md-6 col-sm-12 col-xs-12">
+        <article class="article">
+          <h2 class="article__header"><svg width="24" height="24"><use xlink:href="{{static_url("images/sprite.svg")}}#icon-leaf" /></svg> feeling lucky?</h2>{% block lucky %}{% end %}
+        </article>
+        <article class="article">
+          <h2 class="article__header"><svg width="24" height="24"><use xlink:href="{{static_url("images/sprite.svg")}}#icon-thumbs-down" /></svg> negative traits</h2>
+          <p class="article__text">{% block negativetraits %}{% end %}</p>
+        </article>
+      </div>
+    </div>
+  </div>
+
+
+
+  <footer class="background-wrapper extra-padding">
+    <div class="container container-lg">
+      <div class="row row-lg">
+        <div class="col-sm-4 col-xs-12">
+          <div class="card card--orange">
+            <div class="card__icon planet"></div>
+            <h2 class="card__header">{% block horoscopecard %}{% end %}</h2>
+            <div class="card__action">
+              <a href="/{% block zodiac %}{% end %}" class="btn-outline card__link">VIEW HOROSCROPE</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-xs-12">
+          <div class="card card--yellow">
+            <div class="card__icon star"></div>
+            <h2 class="card__header">{% block famouscard %}{% end %}</h2>
+            <div class="card__action">
+              <a href="/{% block zodiac %}{% end %}/famous" class="btn-outline card__link">VIEW FAMOUS {% block famouscardbutton %}{% end %}</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-xs-12">
+          <div class="card card--green">
+            <div class="card__icon flash"></div>
+            <h2 class="card__header">{% block compatibilitycard %}{% end %}</h2>
+            <div class="card__action">
+              <a href="/{% block zodiac %}{% end %}/compatibility" class="btn-outline card__link">DISCOVER COMPATIBILITY</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="created_by">Created by Ted, Lu, Zoe and Ash</p>
+    </div>
+  </footer>
+
+
+{% end %}
