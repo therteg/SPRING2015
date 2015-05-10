@@ -1,0 +1,38 @@
+$sagittarius: #00A99D;
+$capricorn: #29ABE2;
+$aquarius: #0071BC;
+$scorpio: #662D91;
+$gemini: #9E005D;
+$pisces: #ED1E79;
+$aries: #ED1C24;
+$virgo: #F7931E;
+$leo: #D9E021;
+$taurus: #8CC63F;
+$cancer: #39B54A;
+$libra: #006837;
+$orange: #F15A24;
+
+
+@mixin respond-to($breakpoint) {
+  @if map-has-key($container-width, $breakpoint) {
+    @media (min-width: #{map-get($container-width, $breakpoint)}) {
+      @content;
+    }
+  }
+
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Please make sure it is defined in `$breakpoints` map.";
+  }
+}
+
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}

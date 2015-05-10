@@ -1,1 +1,6 @@
+<<<<<<< HEAD
 *.sass-cache
+=======
+*.sass-cache
+**/*.pyc
+>>>>>>> 3b7a0a9ba1c5ec0f9f8fb49b80fcf54db3f583c1

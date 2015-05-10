@@ -1,4 +1,5 @@
 import app.basic
+<<<<<<< HEAD
 from apiclient.discovery import build
 from apiclient.errors import HttpError
 from oauth2client.tools import argparser
@@ -6,6 +7,15 @@ import json
 
 from lib.mongo import db
 from lib import testmongo
+=======
+#from apiclient.discovery import build
+#from apiclient.errors import HttpError
+#from oauth2client.tools import argparser
+#import json
+
+#from lib.mongo import db
+#from lib import testmongo
+>>>>>>> 3b7a0a9ba1c5ec0f9f8fb49b80fcf54db3f583c1
 
 
 class HomeHandler(app.basic.BaseHandler):

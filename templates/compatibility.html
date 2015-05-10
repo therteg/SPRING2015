@@ -23,18 +23,30 @@
 
   <div class="container container-xlg extra-padding" style="max-width: 1000px;">
     <div class="row row-xlg">
+<<<<<<< HEAD
       <div class="col-sm-6 col-sm-offset-3">
         <article class="article article--single">
           {% block compatibilitytext %}{% end %} 
         </article>
+=======
+      <div class="">
+          {% block compatibilitytext %}{% end %} 
+        
+>>>>>>> 3b7a0a9ba1c5ec0f9f8fb49b80fcf54db3f583c1
       </div>
     </div>
   </div>
 
   <footer class="background-wrapper extra-padding">
+<<<<<<< HEAD
     <div class="container container-lg">
       <div class="row row-lg">
         <div class="col-sm-4 col-xs-12">
+=======
+    <div class="container text container-lg">
+      <div class="row row-lg">
+        <div class="col-md-4 col-xs-12">
+>>>>>>> 3b7a0a9ba1c5ec0f9f8fb49b80fcf54db3f583c1
           <div class="card card--blue">
             <div class="card__icon lightbulb"></div>
             <h2 class="card__header">{% block explorecard %}{% end %} </h2>
@@ -43,7 +55,11 @@
             </div>
           </div>
         </div>
+<<<<<<< HEAD
         <div class="col-sm-4 col-xs-12">
+=======
+        <div class="col-md-4 col-xs-12">
+>>>>>>> 3b7a0a9ba1c5ec0f9f8fb49b80fcf54db3f583c1
           <div class="card card--yellow">
             <div class="card__icon star"></div>
             <h2 class="card__header">{% block famouscard %}{% end %}</h2>
@@ -52,7 +68,11 @@
             </div>
           </div>
         </div>
+<<<<<<< HEAD
         <div class="col-sm-4 col-xs-12">
+=======
+        <div class="col-md-4 col-xs-12">
+>>>>>>> 3b7a0a9ba1c5ec0f9f8fb49b80fcf54db3f583c1
           <div class="card card--orange">
             <div class="card__icon planet"></div>
             <h2 class="card__header">{% block horoscopecard %}{% end %}</h2>
@@ -65,4 +85,22 @@
       <p class="created_by">Created by Ted, Lu, Zoe and Ash</p>
     </div>
   </footer>
+<<<<<<< HEAD
+=======
+  <script>
+  $(document).ready(function() {
+  $(".article").hide();
+  $(".article-cancer").show();
+
+  $(".carousel__item").click(function() {
+
+    var classes = $(this).attr('class').split(' ')[1].substring(6);
+    console.log (classes);
+    $(".article").hide();
+    $(".article-"+classes).show();
+
+  });});
+
+  </script>
+>>>>>>> 3b7a0a9ba1c5ec0f9f8fb49b80fcf54db3f583c1
 {% end %}
