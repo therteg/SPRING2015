@@ -1734,4 +1734,15 @@ footer .extra-padding {
 a:-webkit-any-link {
   text-decoration: none; }
 
+/* Hide spinner on <input type="number"> */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; }
+
+#label-press-enter {
+  color: white;
+  margin: 1em; }
+
 /*# sourceMappingURL=main.css.map */
