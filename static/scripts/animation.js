@@ -44,6 +44,8 @@ $(document).ready(function() {
 
 	// Initialize wheel animation
 	initializeWheelAnimation();
+
+	initializeBirthdayInput();
 })
 
 function initializeWheelAnimation() {
@@ -68,4 +70,23 @@ function initializeWheelAnimation() {
 		useTag.attr('width', useTagWidth);
 		useTag.attr('height', useTagWidth);
 	});	
+}
+
+// Show "press enter" label when day/month/year have values.
+function initializeBirthdayInput() {
+	var inputDay = $('input#day');
+	var inputMonth = $('input#month');
+	var inputYear = $('input#year');
+	var onBirthdayChanged = function() {
+		if (inputDay.val() >= 1 && inputDay.val() <= 31 &&
+		    inputMonth.val() >= 1 && inputMonth.val() <= 12 &&
+		    inputYear.val().length > 0) {
+			$('#label-press-enter').css('display', 'block');
+		} else {
+			$('#label-press-enter').css('display', 'none');
+		}
+	}
+	inputDay.on('input', onBirthdayChanged);
+	inputMonth.on('input', onBirthdayChanged);
+	inputYear.on('input', onBirthdayChanged);
 }
