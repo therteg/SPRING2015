@@ -2232,5 +2232,20 @@ footer .extra-padding {
 a:-webkit-any-link {
   text-decoration: none; }
 
+/* Hide spinner on <input type="number"> */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; }
+
+#label-press-enter {
+  color: white;
+  margin: 1em; }
+
+  #label-try-again {
+  color: #ff8d4d;
+  margin: 1em; }
+
 /*# sourceMappingURL=main.css.map */
 >>>>>>> 3b7a0a9ba1c5ec0f9f8fb49b80fcf54db3f583c1
