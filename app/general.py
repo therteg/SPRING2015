@@ -12,6 +12,10 @@ class HomeHandler(app.basic.BaseHandler):
 	def get(self):
 		self.render('index.html')
 
+class HomeHandler2(app.basic.BaseHandler):
+	def get(self):
+		self.render('index2.html')
+
 class CapricornHandler(app.basic.BaseHandler):
 	def get(self):
 		self.render('capricorn.html')

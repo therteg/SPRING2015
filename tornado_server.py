@@ -17,6 +17,8 @@ import app.general
 
 handlers = handlers = [
     (r"/", app.general.HomeHandler),
+    (r"/Mystery", app.general.HomeHandler2),
+    (r"/mystery", app.general.HomeHandler2),
     (r"/capricorn", app.general.CapricornHandler),
     (r"/aquarius", app.general.AquariusHandler),
     (r"/pisces", app.general.PiscesHandler),
