@@ -785,16 +785,17 @@ body {
   width: 100%;
   overflow-y: scroll; }
 
-.background-wrapper {
-  background: url("../images/background-overlay.jpg") no-repeat center center;
+.wrapper-water {
+  background: url("../images/background-overlay-water.jpg") no-repeat center center;
   background-size: cover;
   width: 100%;
   position: relative;
   transition: background-image 0.3s ease-in-out; }
-  .background-wrapper.disable-overlay {
-    background-image: url("../images/background.jpg"); }
-  .background-wrapper.full-height {
+  .wrapper-water.disable-overlay {
+    background-image: url("../images/background-water.jpg"); }
+  .wrapper-water.full-height {
     height: 100%; }
+<<<<<<< HEAD
   .background-wrapper.extra-padding {
 <<<<<<< HEAD
     padding-top: 100px;
@@ -803,8 +804,68 @@ body {
     padding-top: 100px; }
 >>>>>>> 3b7a0a9ba1c5ec0f9f8fb49b80fcf54db3f583c1
   .background-wrapper.medium-padding {
+=======
+  .wrapper-water.extra-padding {
+    padding-top: 100px;
+    padding-bottom: 100px; }
+  .wrapper-water.medium-padding {
+>>>>>>> ec6d755b5e4f1c80fba0390186ffc92a9cf6da76
     padding-top: 50px;
     padding-bottom: 50px; }
+
+.wrapper-earth {
+  background: url("../images/background-overlay-earth.jpg") no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+  transition: background-image 0.3s ease-in-out; }
+  .wrapper-water.disable-overlay {
+    background-image: url("../images/background-earth.jpg"); }
+  .wrapper-water.full-height {
+    height: 100%; }
+  .wrapper-water.extra-padding {
+    padding-top: 100px;
+    padding-bottom: 100px; }
+  .wrapper-water.medium-padding {
+    padding-top: 50px;
+    padding-bottom: 50px; }
+
+    .wrapper-fire {
+  background: url("../images/background-overlay-fire.jpg") no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+  transition: background-image 0.3s ease-in-out; }
+  .wrapper-water.disable-overlay {
+    background-image: url("../images/background-fire.jpg"); }
+  .wrapper-water.full-height {
+    height: 100%; }
+  .wrapper-water.extra-padding {
+    padding-top: 100px;
+    padding-bottom: 100px; }
+  .wrapper-water.medium-padding {
+    padding-top: 50px;
+    padding-bottom: 50px; }
+
+.wrapper-air {
+  background: url("../images/background-overlay-air.jpg") no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+  transition: background-image 0.3s ease-in-out; }
+  .wrapper-water.disable-overlay {
+    background-image: url("../images/background-air.jpg"); }
+  .wrapper-water.full-height {
+    height: 100%; }
+  .wrapper-water.extra-padding {
+    padding-top: 100px;
+    padding-bottom: 100px; }
+  .wrapper-water.medium-padding {
+    padding-top: 50px;
+    padding-bottom: 50px; }
+
+
+
 
 .zodiac {
   margin-left: auto;
